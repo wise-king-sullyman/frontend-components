@@ -1,5 +1,5 @@
 {
-    "name": "@redhat-cloud-services/frontend-components-demo",
+    "name": "@ausuliv/frontend-components-demo",
     "version": "0.0.1",
     "description": "Demo package to test linked packages.",
     "main": "index.js",

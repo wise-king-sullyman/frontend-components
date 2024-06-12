@@ -1,5 +1,5 @@
 {
-    "name": "@redhat-cloud-services/frontend-components-translations",
+    "name": "@ausuliv/frontend-components-translations",
     "version": "3.2.3",
     "description": "Translations package for RedHat Cloud Services project.",
     "main": "index.js",

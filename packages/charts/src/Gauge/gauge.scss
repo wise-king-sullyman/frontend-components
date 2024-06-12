@@ -5,13 +5,13 @@
 // Gauge
 // ==================================================================
 .ins-c-gauge {
-    --ins-c-gauge-critical--Fill:       var(--pf-v5-global--danger-color--100);
+    --ins-c-gauge-critical--Fill:       var(--pf-t--global--color--status--danger--default);
     --ins-c-gauge-high--Fill:           var(--ins-color--orange);
-    --ins-c-gauge-medium--Fill:         var(--pf-v5-global--warning-color--100);
-    --ins-c-gauge-low--Fill:            var(--pf-v5-global--success-color--100);
+    --ins-c-gauge-medium--Fill:         var(--pf-t--global--color--status--warning--default);
+    --ins-c-gauge-low--Fill:            var(--pf-t--global--color--status--success--default);
 
     .c3-chart-arcs-background {
-        fill: var(--pf-v5-global--Color--200);
+        fill: var(--pf-t--global--background--color--secondary--default);
         stroke: none;
     }
 }

@@ -1,5 +1,9 @@
 import React from 'react';
-import { Badge, Button, Chip, ChipGroup } from '@patternfly/react-core';
+import {
+	Label, LabelGroup, Badge,
+	Button
+} from '@patternfly/react-core';
+
 import classNames from 'classnames';
 import './filter-chips.scss';
 
@@ -44,7 +48,7 @@ const FilterChips: React.FunctionComponent<FilterChipsProps> = ({
 }) => {
   const groups: FilterChipGroup[] = filters.filter(isFilterChipGroup);
   const groupedFilters = groups.map((group, groupKey) => (
-    <ChipGroup
+    <LabelGroup
       key={`group_${group.category}`}
       categoryName={String(group.category) || ' '}
       {...(onDeleteGroup && {
@@ -60,9 +64,9 @@ const FilterChips: React.FunctionComponent<FilterChipsProps> = ({
       })}
     >
       {group.chips.map((chip) => (
-        <Chip
+        <Label variant="outline"
           key={chip.name}
-          onClick={(event) => {
+          onClose={(event) => {
             event.stopPropagation();
             onDelete(event, [{ ...group, chips: [chip] }]);
           }}
@@ -73,9 +77,9 @@ const FilterChips: React.FunctionComponent<FilterChipsProps> = ({
               {chip.count}
             </Badge>
           )}
-        </Chip>
+        </Label>
       ))}
-    </ChipGroup>
+    </LabelGroup>
   ));
 
   const plainFilters = filters.filter(isPlainFilterChip);
@@ -85,9 +89,9 @@ const FilterChips: React.FunctionComponent<FilterChipsProps> = ({
       {groupedFilters}
       {plainFilters &&
         plainFilters.map((chip) => (
-          <ChipGroup key={`group_plain_chip_${chip.name}`}>
-            <Chip
-              onClick={(event) => {
+          <LabelGroup key={`group_plain_chip_${chip.name}`}>
+            <Label variant="outline"
+              onClose={(event) => {
                 event.stopPropagation();
                 onDelete(event, [chip]);
               }}
@@ -98,8 +102,8 @@ const FilterChips: React.FunctionComponent<FilterChipsProps> = ({
                   {chip.count}
                 </Badge>
               )}
-            </Chip>
-          </ChipGroup>
+            </Label>
+          </LabelGroup>
         ))}
       {(showDeleteButton === true || (showDeleteButton === undefined && filters.length > 0)) && (
         <Button variant="link" ouiaId="ClearFilters" onClick={(event) => onDelete(event, filters, true)}>

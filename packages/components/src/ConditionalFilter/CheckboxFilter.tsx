@@ -58,7 +58,7 @@ const CheckboxFilter: React.FunctionComponent<CheckboxFilterProps> = ({ items = 
     >
       {placeholder}
       {value.length > 0 && (
-        <Badge className="pf-v5-u-ml-sm" isRead>
+        <Badge className="pf-v6-u-ml-sm" isRead>
           {value.length}
         </Badge>
       )}

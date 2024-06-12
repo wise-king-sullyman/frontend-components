@@ -1,10 +1,11 @@
 import React from 'react';
 import TagCountPF from '@patternfly/react-component-groups/dist/dynamic/TagCount';
 import { ButtonProps } from '@patternfly/react-core/dist/dynamic/components/Button';
-export interface TagCountProps extends ButtonProps {
+export interface TagCountProps extends Omit<ButtonProps, 'variant'> {
   count?: number;
   onTagClick?: React.MouseEventHandler<HTMLButtonElement>;
   className?: string;
+  variant?: 'link' | 'primary' | 'secondary' | 'tertiary' | 'danger' | 'warning' | 'plain' | 'control' | undefined;
 }
 
 /**

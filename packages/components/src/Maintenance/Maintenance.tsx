@@ -1,10 +1,10 @@
 import React from 'react';
 import classNames from 'classnames';
-import { EmptyState, EmptyStateBody, EmptyStateHeader, EmptyStateIcon, EmptyStateProps, Stack, StackItem } from '@patternfly/react-core';
+import { EmptyState, EmptyStateBody, EmptyStateProps, Stack, StackItem } from '@patternfly/react-core';
 import { HourglassHalfIcon } from '@patternfly/react-icons';
 import './maintenance.scss';
 
-export interface MaintenanceProps extends Omit<EmptyStateProps, 'children' | 'title'> {
+export interface MaintenanceProps extends Omit<EmptyStateProps, 'children' | 'title' | 'titleText'> {
   utcStartTime?: string;
   utcEndTime?: string;
   startTime?: string;
@@ -29,8 +29,7 @@ const Maintenance: React.FunctionComponent<MaintenanceProps> = ({
   const emptyStateClassName = classNames(className, 'ins-c-empty-state__maintenance');
 
   return (
-    <EmptyState className={emptyStateClassName} {...props}>
-      <EmptyStateHeader titleText="Maintenance in progress" icon={<EmptyStateIcon icon={HourglassHalfIcon} />} headingLevel="h4" />
+    <EmptyState  headingLevel="h4" icon={HourglassHalfIcon}  titleText="Maintenance in progress" className={emptyStateClassName} {...props}>
       <EmptyStateBody>
         {description ? (
           description

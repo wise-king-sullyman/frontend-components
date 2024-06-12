@@ -1,5 +1,5 @@
 {
-    "name": "@redhat-cloud-services/tsc-transform-imports",
+    "name": "@ausuliv/tsc-transform-imports",
     "version": "1.0.10",
     "main": "index.js",
     "types": "index.d.ts",

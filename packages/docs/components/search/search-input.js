@@ -13,11 +13,11 @@ const useStyles = createUseStyles({
     overflow: 'hidden',
   },
   fragment: {
-    color: 'var(--pf-v5-global--palette--blue-200)',
+    color: 'var(--pf-t--global--color--status--info--default)',
   },
   fragmentMatch: {
     textDecoration: 'underline',
-    color: 'var(--pf-v5-global--link--Color)',
+    color: 'var(--pf-t--global--text--color--link--default)',
   },
 });
 
@@ -61,7 +61,7 @@ const processLinkOption = (term, content, classes) => {
 const LoadingItem = (
   <MenuItem key="loading">
     <Bullseye>
-      <Spinner className="pf-v5-u-m-xl" size="xl" />
+      <Spinner className="pf-v6-u-m-xl" size="xl" />
     </Bullseye>
   </MenuItem>
 );
@@ -116,7 +116,7 @@ const DocSearch = ({ className }) => {
         setAutocompleteOptions([
           <MenuItem key="empty">
             <Bullseye>
-              <TextContent className="pf-v5-u-m-xl">
+              <TextContent className="pf-v6-u-m-xl">
                 <Text>We looked everywhere but found nothing. Try something different.</Text>
               </TextContent>
             </Bullseye>

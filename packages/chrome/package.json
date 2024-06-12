@@ -1,5 +1,5 @@
 {
-    "name": "@redhat-cloud-services/chrome",
+    "name": "@ausuliv/chrome",
     "version": "1.0.9",
     "description": "Chrome functions for RedHat Hybrid cloud console.",
     "main": "index.js",

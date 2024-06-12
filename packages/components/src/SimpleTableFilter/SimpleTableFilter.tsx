@@ -66,7 +66,7 @@ const SimpleFilter: React.FC<SimpleFilterProps> = ({
     ));
   // FIXME: Fix the layout in primary toolbar
   return (
-    <div className={`pf-v5-c-input-group ins-c-filter ${!buttonTitle ? 'ins-u-no-title' : ''} ${className}`} {...props}>
+    <div className={`pf-v6-c-input-group ins-c-filter ${!buttonTitle ? 'ins-u-no-title' : ''} ${className}`} {...props}>
       {options && (
         <Dropdown
           onSelect={onSelect}

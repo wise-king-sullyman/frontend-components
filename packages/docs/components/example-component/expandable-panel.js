@@ -13,8 +13,8 @@ import CodesandboxIcon from './codesandbox-svg-icons';
 const useToastStyles = createUseStyles({
   toast: {
     position: 'fixed !important',
-    bottom: 'var(--pf-v5-global--spacer--md)',
-    right: 'var(--pf-v5-global--spacer--md)',
+    bottom: 'var(--pf-t--global--spacer--md)',
+    right: 'var(--pf-t--global--spacer--md)',
     cursor: 'pointer',
   },
 });
@@ -55,7 +55,7 @@ const useStyles = createUseStyles({
       width: 24,
       height: 24,
       transform: 'scale(.8)',
-      fill: 'var(--pf-v5-c-button--m-plain--Color)',
+      fill: 'var(--pf-v6-c-button--m-plain--Color)',
     },
   },
 });
@@ -83,8 +83,8 @@ const ExpandablePanel = ({ codeOnly, language, sourceCode, source }) => {
   return (
     <Fragment>
       {toast && <TimedToas {...toast} handleClose={handleClose} />}
-      <Toolbar className={classnames('pf-v5-u-p-0 pf-v5-u-mb-md', classes.toolbar)}>
-        <ToolbarContent className="pf-v5-u-p-0">
+      <Toolbar className={classnames('pf-v6-u-p-0 pf-v6-u-mb-md', classes.toolbar)}>
+        <ToolbarContent className="pf-v6-u-p-0">
           <ToolbarItem className={classes.firstItem}>
             {!codeOnly && (
               <Tooltip content={<p>Open code example</p>}>

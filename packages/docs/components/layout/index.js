@@ -41,11 +41,11 @@ const useStyles = createUseStyles({
   },
   link: {
     textDecoration: 'none',
-    color: 'var(--pf-v5-global--BackgroundColor--100)',
+    color: 'var(--pf-t--global--background--color--primary--default)',
   },
   footer: {
     height: 'auto',
-    background: 'var(--pf-v5-global--BackgroundColor--dark-100)',
+    background: 'var(--pf-t--global--background--color--inverse--default)',
   },
   contentWrapper: {
     flex: 1,
@@ -111,11 +111,11 @@ const Layout = ({ children }) => {
   const Sidebar = <PageSidebar nav={navId?.length > 0 && NavComponent && <NavComponent />} isNavOpen={isOpen} />;
 
   return (
-    <Page className={classes.page} header={Header} sidebar={NavComponent && Sidebar}>
+    <Page className={classes.page} masthead={Header} sidebar={NavComponent && Sidebar}>
       <div className={classes.contentWrapper}>
         <Split style={{ minHeight: '76.9vh' }} hasGutter>
           <SplitItem isFilled>
-            <div className={classnames('pf-v5-u-p-md', classes.content)}>
+            <div className={classnames('pf-v6-u-p-md', classes.content)}>
               <Stack hasGutter>
                 <StackItem>
                   <Breadcrumbs />
@@ -131,7 +131,7 @@ const Layout = ({ children }) => {
       </div>
 
       <PageSection className={classes.footer} isFilled={false}>
-        <Footer className="pf-v5-u-my-xl pf-v5-u-mx-md">
+        <Footer className="pf-v6-u-my-xl pf-v6-u-mx-md">
           <Flex
             direction={{ default: 'column', md: 'row' }}
             justifyContent={{ md: 'justifyContentFlexEnd' }}
