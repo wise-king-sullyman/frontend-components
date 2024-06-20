@@ -1,4 +1,4 @@
-import { LogType, fecLogger } from '@redhat-cloud-services/frontend-components-config-utilities';
+import { LogType, fecLogger } from '@ausuliv/frontend-components-config-utilities';
 import { Compiler, WebpackPluginInstance } from 'webpack';
 import { CommonConfigOptions } from './createConfig';
 

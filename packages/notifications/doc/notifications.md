@@ -9,7 +9,7 @@ Add `NotificationsPortal` component and add `notifications` reducer to your stor
 ```JSX
 import React, { Fragment } from 'react'
 import { Provider } from 'react-redux'
-import { getRegistry } from '@redhat-cloud-services/frontend-components-utilities/Registry';
+import { getRegistry } from '@ausuliv/frontend-components-utilities/Registry';
 import NotificationsPortal from '@redhat-cloud-services/frontend-components-notifications/NotificationsPortal';
 import { notificationsReducer } from '@redhat-cloud-services/frontend-components-notifications/redux';
 
@@ -100,7 +100,7 @@ Like in the basic example, you must add your reducer and notifications container
 
 ```JSX
 import promiseMiddleware from 'redux-promise-middleware'
-import { getRegistry } from '@redhat-cloud-services/frontend-components-utilities/Registry';
+import { getRegistry } from '@ausuliv/frontend-components-utilities/Registry';
 import notificationsMiddleware from '@redhat-cloud-services/frontend-components-notifications/notificationsMiddleware';
 import notificationsReducer from '@redhat-cloud-services/frontend-components-notifications/redux';
 

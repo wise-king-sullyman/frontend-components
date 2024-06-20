@@ -7,8 +7,8 @@ If you are using newer version of react, you can use hook that comes with this p
 ```JSX
 import React, { Fragment } from 'react';
 import { useStore } from 'react-redux';
-import { useInventory } from '@redhat-cloud-services/frontend-components-utilities/useInventory';
-import { getRegistry } from '@redhat-cloud-services/frontend-components-utilities/Registry';
+import { useInventory } from '@ausuliv/frontend-components-utilities/useInventory';
+import { getRegistry } from '@ausuliv/frontend-components-utilities/Registry';
 import { entitiesReducer } from './redux/reducers/table';
 
 const MyCmp = () => {
@@ -62,8 +62,8 @@ If you want to change the reducer that has been calculated or you want to assign
 ```JSX
 import React, { useEffect, useState, Fragment } from 'react';
 import { useStore } from 'react-redux';
-import { useInventory } from '@redhat-cloud-services/frontend-components-utilities/files/useInventory';
-import { getRegistry } from '@redhat-cloud-services/frontend-components-utilities/files/Registry';
+import { useInventory } from '@ausuliv/frontend-components-utilities/files/useInventory';
+import { getRegistry } from '@ausuliv/frontend-components-utilities/files/Registry';
 import { entitiesReducer } from './redux/reducers/table';
 
 const MyCmp = () => {

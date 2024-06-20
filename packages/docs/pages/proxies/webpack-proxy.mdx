@@ -248,7 +248,7 @@ const {
   rbac,
   backofficeProxy,
   defaultServices,
-} = require('@redhat-cloud-services/frontend-components-config-utilities/standalone');
+} = require('@ausuliv/frontend-components-config-utilities/standalone');
 
 const { config: webpackConfig, plugins } = config({
   standalone: {
@@ -324,7 +324,7 @@ config(
 ##### Customizing default services
 The chrome, config, entitlements, and landing services are exposed for you to mutate:
 ```js
-const { defaultServices } = require('@redhat-cloud-services/frontend-components-config-utilities/standalone');
+const { defaultServices } = require('@ausuliv/frontend-components-config-utilities/standalone');
 
 defaultServices.chrome.path = '/path/to/my/insights-chrome';
 const { config: webpackConfig, plugins } = config({

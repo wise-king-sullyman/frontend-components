@@ -4,7 +4,7 @@ const fs = require('fs');
 const jsyaml = require('js-yaml');
 
 import express from 'express';
-import { jsVarName } from '@redhat-cloud-services/frontend-components-config-utilities';
+import { jsVarName } from '@ausuliv/frontend-components-config-utilities';
 
 const cwd = process.cwd();
 const pgk = require(path.resolve(cwd, './package.json'));

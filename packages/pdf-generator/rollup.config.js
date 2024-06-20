@@ -59,7 +59,7 @@ export default [{
     output: {
         file: './dist/umd/index.js',
         format: 'umd',
-        name: '@redhat-cloud-services/frontend-components-pdf-generator',
+        name: '@ausuliv/frontend-components-pdf-generator',
         globals
     },
     external,
@@ -69,7 +69,7 @@ export default [{
     output: {
         file: './dist/cjs/index.js',
         format: 'cjs',
-        name: '@redhat-cloud-services/frontend-components-pdf-generator',
+        name: '@ausuliv/frontend-components-pdf-generator',
         globals
     },
     external,
@@ -79,7 +79,7 @@ export default [{
     output: {
         file: './dist/esm/index.js',
         format: 'esm',
-        name: '@redhat-cloud-services/frontend-components-pdf-generator',
+        name: '@ausuliv/frontend-components-pdf-generator',
         globals
     },
     external,

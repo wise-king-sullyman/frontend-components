@@ -1,4 +1,4 @@
-import { LogType, fecLogger } from '@redhat-cloud-services/frontend-components-config-utilities';
+import { LogType, fecLogger } from '@ausuliv/frontend-components-config-utilities';
 import createConfig, { CreateConfigOptions } from './createConfig';
 import createPlugins, { CreatePluginsOptions } from './createPlugins';
 const { sync } = require('glob');

@@ -1,6 +1,6 @@
 const webpack = require('webpack');
 const { resolve } = require('path');
-import { LogType, fecLogger, federatedModules, generatePFSharedAssetsList } from '@redhat-cloud-services/frontend-components-config-utilities';
+import { LogType, fecLogger, federatedModules, generatePFSharedAssetsList } from '@ausuliv/frontend-components-config-utilities';
 import FECConfiguration from '../lib/fec.config';
 
 const rootDir = process.env.FEC_ROOT_DIR || process.cwd();

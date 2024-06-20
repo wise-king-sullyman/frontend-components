@@ -116,10 +116,10 @@ class App extends Component {
 ## Export strings from your app
 You can use [babel-plugin-react-intl](https://www.npmjs.com/package/babel-plugin-react-intl) to export all of your formatted messages from your app to generate JSON files that will be used by translators.
 
-To join your messages to one JSON that can be uploaded to translate service and combine all languages together you can use `mergeMessages.js` from `@redhat-cloud-services/frontend-components-utilities`. For full describtion of how to pass custom config can be found at [mergeMessages.md](/RedHatInsights/frontend-components/blob/master/packages/utils/doc/mergeMessages.md), or by passing `--help` to `mergeMessages.js`
+To join your messages to one JSON that can be uploaded to translate service and combine all languages together you can use `mergeMessages.js` from `@ausuliv/frontend-components-utilities`. For full describtion of how to pass custom config can be found at [mergeMessages.md](/RedHatInsights/frontend-components/blob/master/packages/utils/doc/mergeMessages.md), or by passing `--help` to `mergeMessages.js`
 
 ```bash
-node node_modules/@redhat-cloud-services/frontend-components-utilities/mergeMessages.js
+node node_modules/@ausuliv/frontend-components-utilities/mergeMessages.js
 ```
 
 ## Use messages in your app

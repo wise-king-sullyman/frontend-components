@@ -10,11 +10,11 @@ You can use this component in order to create download/preview PDF.
 You need to install this package:
 
 ```bash
-$ npm i -S @redhat-cloud-services/frontend-components-pdf-generator
+$ npm i -S @ausuliv/frontend-components-pdf-generator
 ```
 
 ```bash
-$ yarn add @redhat-cloud-services/frontend-components-pdf-generator
+$ yarn add @ausuliv/frontend-components-pdf-generator
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ This component allows multiple pages to be present in one report, just make sure
 ```JSX
 import React, { Component, Fragment } from 'react';
 import ReactDOM from 'react-dom';
-import { DownloadButton, Section, Column, Table, Panel, PanelItem, Battery, Chart, Dl, Dt, Dd } from '@redhat-cloud-services/frontend-components-pdf-generator';
+import { DownloadButton, Section, Column, Table, Panel, PanelItem, Battery, Chart, Dl, Dt, Dd } from '@ausuliv/frontend-components-pdf-generator';
 
 class DemoApp extends Component {
     state = {
@@ -204,7 +204,7 @@ If you want to change the color schema for each chart you can do that by passing
 
 ##### `Donut`
 ```JSX
-import { Chart } from '@redhat-cloud-services/frontend-components-pdf-generator';
+import { Chart } from '@ausuliv/frontend-components-pdf-generator';
 
 <Chart
     chartType="donut"
@@ -216,7 +216,7 @@ import { Chart } from '@redhat-cloud-services/frontend-components-pdf-generator'
 ![Chart example](./doc/donut-chart.png)
 ##### `Pie`
 ```JSX
-import { Chart } from '@redhat-cloud-services/frontend-components-pdf-generator';
+import { Chart } from '@ausuliv/frontend-components-pdf-generator';
 
 <Chart
     chartType="pie"
@@ -234,7 +234,7 @@ import { Chart } from '@redhat-cloud-services/frontend-components-pdf-generator'
 #### 3) `Section`
   * column type - This component uses flex set to 1 so if you will use section in column type you can insert multiple columns in row.
 ```JSX
-import { Section, Column, customTitle } from '@redhat-cloud-services/frontend-components-pdf-generator';
+import { Section, Column, customTitle } from '@ausuliv/frontend-components-pdf-generator';
 
 <Section title="I am donut chart about pets">
     <Column>
@@ -246,7 +246,7 @@ import { Section, Column, customTitle } from '@redhat-cloud-services/frontend-co
 
   * row type - Section by default has column type by default, in order to switch it to row you have to pass `withColumn={false}`
 ```JSX
-import { Section, customTitle } from '@redhat-cloud-services/frontend-components-pdf-generator';
+import { Section, customTitle } from '@ausuliv/frontend-components-pdf-generator';
 
 <Section title="Some title" withColumn={false}>
     {customTitle('some text')}
@@ -257,7 +257,7 @@ import { Section, customTitle } from '@redhat-cloud-services/frontend-components
 #### 4) `Table`
 Table has by default header turned off, so if you want to treat first row as header you have to specify it in prop
 ```JSX
-import { Section } from '@redhat-cloud-services/frontend-components-pdf-generator';
+import { Section } from '@ausuliv/frontend-components-pdf-generator';
 
 <Table
     withHeader
@@ -272,7 +272,7 @@ import { Section } from '@redhat-cloud-services/frontend-components-pdf-generato
 #### 5) `Description List`
 All the elements (dl, dt, dd) can be styled individually
 ```JSX
-import { Section, Dl, Dt, Dd } from '@redhat-cloud-services/frontend-components-pdf-generator';
+import { Section, Dl, Dt, Dd } from '@ausuliv/frontend-components-pdf-generator';
 
 <Dl>
     <Dt>Mercury</Dt>

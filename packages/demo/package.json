@@ -19,12 +19,12 @@
     },
     "homepage": "https://github.com/RedHatInsights/frontend-components/tree/master/packages/demo#readme",
     "dependencies": {
-        "@redhat-cloud-services/frontend-components": "*",
-        "@redhat-cloud-services/frontend-components-charts": "*",
-        "@redhat-cloud-services/frontend-components-notifications": "*",
-        "@redhat-cloud-services/frontend-components-pdf-generator": "*",
-        "@redhat-cloud-services/frontend-components-remediations": "*",
-        "@redhat-cloud-services/frontend-components-utilities": "*"
+        "@ausuliv/frontend-components": "*",
+        "@ausuliv/frontend-components-charts": "*",
+        "@ausuliv/frontend-components-notifications": "*",
+        "@ausuliv/frontend-components-pdf-generator": "*",
+        "@ausuliv/frontend-components-remediations": "*",
+        "@ausuliv/frontend-components-utilities": "*"
     },
     "devDependencies": {
         "@swc/core": "^1.3.73",

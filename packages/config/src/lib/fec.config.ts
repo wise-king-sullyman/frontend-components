@@ -1,4 +1,4 @@
-import { FederatedModulesConfig } from '@redhat-cloud-services/frontend-components-config-utilities';
+import { FederatedModulesConfig } from '@ausuliv/frontend-components-config-utilities';
 import { CreateConfigOptions } from './createConfig';
 import { CreatePluginsOptions, WebpackPluginDefinition } from './createPlugins';
 

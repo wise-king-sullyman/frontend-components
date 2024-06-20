@@ -1,4 +1,4 @@
-const { fecLogger, LogType } = require('@redhat-cloud-services/frontend-components-config-utilities');
+const { fecLogger, LogType } = require('@ausuliv/frontend-components-config-utilities');
 import FECConfiguration from '../lib/fec.config';
 import config from '../lib/index';
 import commonPlugins from './webpack.plugins';

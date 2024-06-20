@@ -16,7 +16,7 @@ With yarn
 yarn add @redhat-cloud-services/frontend-components-notifications
 ```
 
-This package is dependent on [@redhat-cloud-services/frontend-components-utilities](https://www.npmjs.com/package/@redhat-cloud-services/frontend-components-utilities) it will automatically install it trough direct dependencies.
+This package is dependent on [@ausuliv/frontend-components-utilities](https://www.npmjs.com/package/@ausuliv/frontend-components-utilities) it will automatically install it trough direct dependencies.
 
 ## Treeshaking
 

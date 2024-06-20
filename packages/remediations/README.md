@@ -16,7 +16,7 @@ With yarn
 yarn add @redhat-cloud-services/frontend-components-remediations
 ```
 
-This package is dependent on [@redhat-cloud-services/frontend-components-utilities](https://www.npmjs.com/package/@redhat-cloud-services/frontend-components-utilities) and [@redhat-cloud-services/frontend-components](https://www.npmjs.com/package/@redhat-cloud-services/frontend-components) it will automatically install them trough direct dependencies.
+This package is dependent on [@ausuliv/frontend-components-utilities](https://www.npmjs.com/package/@ausuliv/frontend-components-utilities) and [@redhat-cloud-services/frontend-components](https://www.npmjs.com/package/@redhat-cloud-services/frontend-components) it will automatically install them trough direct dependencies.
 
 ## Migration guide v2 -> v3
 

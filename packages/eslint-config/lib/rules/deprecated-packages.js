@@ -4,7 +4,7 @@
  */
 
 const deprecatedPackages = {
-  '@redhat-cloud-services/frontend-components-pdf-generator': {
+  '@ausuliv/frontend-components-pdf-generator': {
     hint: 'https://github.com/RedHatInsights/pdf-generator',
   },
 };

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import debouce from '@redhat-cloud-services/frontend-components-utilities/debounce';
+import debouce from '@ausuliv/frontend-components-utilities/debounce';
 
 const AsyncFunction = (callback) => {
   callback();

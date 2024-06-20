@@ -43,7 +43,7 @@ When migrating application to chrome 2 you may want to disable this for some tim
   module: {
     rules: [{
       test: new RegExp(appEntry),
-      loader: '@redhat-cloud-services/frontend-components-config-utilities/chrome-render-loader',
+      loader: '@ausuliv/frontend-components-config-utilities/chrome-render-loader',
       options: {
         appName: 'name-of-your-app',
         skipChrome2: true
@@ -58,7 +58,7 @@ When migrating application to chrome 2 you may want to disable this for some tim
 To properly load files in chrome 2 you have to generate mapper to each exported chunk. This webpack plugin will do that for you.
 
 ```JS
-const ChunkMapper = require('@redhat-cloud-services/frontend-components-config-utilities/chunk-mapper');
+const ChunkMapper = require('@ausuliv/frontend-components-config-utilities/chunk-mapper');
 
 {
   plugins: [
@@ -126,7 +126,7 @@ This packages exposes these federated shared dependencies
 * `@patternfly/react-icons` - version taken from your `package.json`
 * `@patternfly/react-tokens` - version taken from your `package.json`
 * `@redhat-cloud-services/frontend-components` - version taken from your `package.json`
-* `@redhat-cloud-services/frontend-components-utilities` - version taken from your `package.json`
+* `@ausuliv/frontend-components-utilities` - version taken from your `package.json`
 * `@redhat-cloud-services/frontend-components-notifications` - version taken from your `package.json`
 
 ## Extensions plugin

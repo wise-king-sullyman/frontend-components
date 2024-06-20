@@ -9,7 +9,7 @@ Where you would use a `useNavigate` from React Router, you can use `useInsightsN
 
 ```JSX
 import React, { Fragment } from 'react';
-import useNavigate from '@redhat-cloud-services/frontend-components-utilities/useInsightsNavigate';
+import useNavigate from '@ausuliv/frontend-components-utilities/useInsightsNavigate';
 
 const MyCmp = () => {
     const navigate = useInsightsNavigate();

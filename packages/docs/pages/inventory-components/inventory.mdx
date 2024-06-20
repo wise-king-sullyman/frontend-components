@@ -41,7 +41,7 @@ import * as reactRouterDom from 'react-router-dom';
 import * as reactCore from '@patternfly/react-core';
 import * as reactIcons from '@patternfly/react-icons';
 import { PaginationRow } from 'patternfly-react';
-import registryDecorator from '@redhat-cloud-services/frontend-components-utilities/files/Registry';
+import registryDecorator from '@ausuliv/frontend-components-utilities/files/Registry';
 
 @registryDecorator()
 class SomeCmp extends React.Component {
@@ -91,7 +91,7 @@ import * as reactRouterDom from 'react-router-dom';
 import * as reactCore from '@patternfly/react-core';
 import * as reactIcons from '@patternfly/react-icons';
 import { PaginationRow } from 'patternfly-react';
-import registryDecorator from '@redhat-cloud-services/frontend-components-utilities/files/Registry';
+import registryDecorator from '@ausuliv/frontend-components-utilities/files/Registry';
 
 @registryDecorator()
 class SomeCmp extends React.Component {
@@ -182,7 +182,7 @@ import * as reactRouterDom from 'react-router-dom';
 import * as reactCore from '@patternfly/react-core';
 import * as reactIcons from '@patternfly/react-icons';
 import { PaginationRow } from 'patternfly-react';
-import registryDecorator from '@redhat-cloud-services/frontend-components-utilities/files/Registry';
+import registryDecorator from '@ausuliv/frontend-components-utilities/files/Registry';
 import { hostData } from './api';
 
 @registryDecorator()
@@ -236,7 +236,7 @@ import * as reactRouterDom from 'react-router-dom';
 import * as reactCore from '@patternfly/react-core';
 import * as reactIcons from '@patternfly/react-icons';
 import { PaginationRow } from 'patternfly-react';
-import registryDecorator from '@redhat-cloud-services/frontend-components-utilities/files/Registry';
+import registryDecorator from '@ausuliv/frontend-components-utilities/files/Registry';
 
 @registryDecorator()
 class SomeCmp extends React.Component {
@@ -278,7 +278,7 @@ import * as reactRouterDom from 'react-router-dom';
 import * as reactCore from '@patternfly/react-core';
 import * as reactIcons from '@patternfly/react-icons';
 import { PaginationRow } from 'patternfly-react';
-import registryDecorator from '@redhat-cloud-services/frontend-components-utilities/files/Registry';
+import registryDecorator from '@ausuliv/frontend-components-utilities/files/Registry';
 
 @registryDecorator()
 class SomeCmp extends React.Component {
@@ -325,7 +325,7 @@ import * as reactRouterDom from 'react-router-dom';
 import * as reactCore from '@patternfly/react-core';
 import * as reactIcons from '@patternfly/react-icons';
 import * as pfReactTable from '@patternfly/react-table';
-import registryDecorator from '@redhat-cloud-services/frontend-components-utilities/files/Registry';
+import registryDecorator from '@ausuliv/frontend-components-utilities/files/Registry';
 
 @registryDecorator()
 class SomeCmp extends React.Component {
@@ -393,7 +393,7 @@ import * as reactRouterDom from 'react-router-dom';
 import * as reactCore from '@patternfly/react-core';
 import * as reactIcons from '@patternfly/react-icons';
 import * as pfReactTable from '@patternfly/react-table';
-import registryDecorator from '@redhat-cloud-services/frontend-components-utilities/files/Registry';
+import registryDecorator from '@ausuliv/frontend-components-utilities/files/Registry';
 
 @registryDecorator()
 class SomeCmp extends React.Component {
@@ -415,7 +415,7 @@ import * as reactRouterDom from 'react-router-dom';
 import * as reactCore from '@patternfly/react-core';
 import * as reactIcons from '@patternfly/react-icons';
 import * as pfReactTable from '@patternfly/react-table';
-import registryDecorator from '@redhat-cloud-services/frontend-components-utilities/files/Registry';
+import registryDecorator from '@ausuliv/frontend-components-utilities/files/Registry';
 
 @registryDecorator()
 class SomeCmp extends React.Component {
@@ -454,7 +454,7 @@ import * as reactRouterDom from 'react-router-dom';
 import * as reactCore from '@patternfly/react-core';
 import * as reactIcons from '@patternfly/react-icons';
 import * as pfReactTable from '@patternfly/react-table';
-import registryDecorator from '@redhat-cloud-services/frontend-components-utilities/files/Registry';
+import registryDecorator from '@ausuliv/frontend-components-utilities/files/Registry';
 
 @registryDecorator()
 class SomeCmp extends React.Component {
@@ -507,7 +507,7 @@ import * as reactRouterDom from 'react-router-dom';
 import * as reactCore from '@patternfly/react-core';
 import * as reactIcons from '@patternfly/react-icons';
 import * as pfReactTable from '@patternfly/react-table';
-import registryDecorator from '@redhat-cloud-services/frontend-components-utilities/files/Registry';
+import registryDecorator from '@ausuliv/frontend-components-utilities/files/Registry';
 
 @registryDecorator()
 class SomeCmp extends React.Component {
@@ -557,7 +557,7 @@ You'll want to split the reducers from your app logic in our example we have all
 If you are going to change rows or entities in store, please use `mergeArraysByKey` function which helps you with merging both current state and new payload together so you don't loose any of it.
 * `src/store/reducers.js` - let's use `applyReducerHash` to demonstrate how to use such function
 ```JS
-import { applyReducerHash } from '@redhat-cloud-services/frontend-components-utilities/files/ReducerRegistry';
+import { applyReducerHash } from '@ausuliv/frontend-components-utilities/files/ReducerRegistry';
 import { ACTION_TYPES } from '../constants';
 export const listReducer = applyReducerHash({
   [ACTION_TYPES.GET_ENTITIES_FULFILLED]: (state, payload) => {
@@ -575,7 +575,7 @@ import * as reactCore from '@patternfly/react-core';
 import * as reactIcons from '@patternfly/react-icons';
 import * as pfReactTable from '@patternfly/react-table';
 import { listReducer } from './store/reducers';
-import registryDecorator from '@redhat-cloud-services/frontend-components-utilities/files/Registry';
+import registryDecorator from '@ausuliv/frontend-components-utilities/files/Registry';
 
 @registryDecorator()
 class SomeCmp extends React.Component {
@@ -642,7 +642,7 @@ import * as reactCore from '@patternfly/react-core';
 import * as reactIcons from '@patternfly/react-icons';
 import * as pfReactTable from '@patternfly/react-table';
 import { entityDetailReducer } from './store/reducers';
-import registryDecorator from '@redhat-cloud-services/frontend-components-utilities/files/Registry';
+import registryDecorator from '@ausuliv/frontend-components-utilities/files/Registry';
 
 @registryDecorator()
 class SomeCmp extends React.Component {

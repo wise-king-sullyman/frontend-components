@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const { execSync } = require('child_process');
-import serveStatic from '@redhat-cloud-services/frontend-components-config-utilities/serve-federated';
+import serveStatic from '@ausuliv/frontend-components-config-utilities/serve-federated';
 const fs = require('fs');
 const path = require('path');
 import yargs from 'yargs';
@@ -10,7 +10,7 @@ import { validateFECConfig } from './common';
 
 const devScript = require('./dev-script');
 const buildScript = require('./build-script');
-const { fecLogger, LogType } = require('@redhat-cloud-services/frontend-components-config-utilities');
+const { fecLogger, LogType } = require('@ausuliv/frontend-components-config-utilities');
 
 function patchHosts() {
   const command = `

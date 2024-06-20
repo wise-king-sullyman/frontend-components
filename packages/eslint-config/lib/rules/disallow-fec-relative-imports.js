@@ -10,11 +10,11 @@ const FECPackages = [
   '@redhat-cloud-services/frontend-components-demo',
   '@redhat-cloud-services/eslint-config-redhat-cloud-services',
   '@redhat-cloud-services/frontend-components-notifications',
-  '@redhat-cloud-services/frontend-components-pdf-generator',
+  '@ausuliv/frontend-components-pdf-generator',
   '@redhat-cloud-services/frontend-components-remediations',
   '@redhat-cloud-services/rule-components',
   '@redhat-cloud-services/frontend-components-translations',
-  '@redhat-cloud-services/frontend-components-utilities',
+  '@ausuliv/frontend-components-utilities',
 ];
 
 module.exports = {

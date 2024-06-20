@@ -8,7 +8,7 @@ import {
   getRBAC,
   hasAllPermissions,
   initialPermissions,
-} from '@redhat-cloud-services/frontend-components-utilities/RBAC';
+} from '@ausuliv/frontend-components-utilities/RBAC';
 
 const hasAccessWithUserPermissions = (userPermissions: (Access | string)[], checkResourceDefinitions: boolean) => {
   return (requiredPermissions: (Access | string)[], checkAll?: boolean, checkResourceDefinitionsOverride?: boolean): boolean => {

@@ -7,12 +7,12 @@ This package exports common functions to be used in other packages.
 ## Installation
 With NPM
 ```bash
-npm i -S @redhat-cloud-services/frontend-components-utilities
+npm i -S @ausuliv/frontend-components-utilities
 ```
 
 With yarn
 ```bash
-yarn add @redhat-cloud-services/frontend-components-utilities
+yarn add @ausuliv/frontend-components-utilities
 ```
 
 This package is dependent on [@redhat-cloud-services/frontend-components](https://www.npmjs.com/package/@redhat-cloud-services/frontend-components) it will automatically installed trough direct dependencies.
@@ -26,10 +26,10 @@ Assets are no longer under `/files` directory but directly at the root of the bu
 
 ```jsx
 // v2
-import { getRegistry } from '@redhat-cloud-services/frontend-components-utilities/Registry';
+import { getRegistry } from '@ausuliv/frontend-components-utilities/Registry';
 
 // v3
-import { getRegistry } from '@redhat-cloud-services/frontend-components-utilities/Registry';
+import { getRegistry } from '@ausuliv/frontend-components-utilities/Registry';
 ```
 
 #### No UMD build
@@ -42,9 +42,9 @@ RowLoader component is no longer a part of `helpers` file but is now a stand-alo
 
 ```jsx
 // v2
-import { RowLoader } from '@redhat-cloud-services/frontend-components-utilities/helpers'
+import { RowLoader } from '@ausuliv/frontend-components-utilities/helpers'
 // v3
-import RowLoader from '@redhat-cloud-services/frontend-components-utilities/RowLoader'
+import RowLoader from '@ausuliv/frontend-components-utilities/RowLoader'
 ```
 
 #### SCSS files
@@ -53,9 +53,9 @@ SCSS files are now under `styles` directory.
 
 ```scss
 /** v2 */
-@import '~@redhat-cloud-services/frontend-components-utilities/styles/all';
+@import '~@ausuliv/frontend-components-utilities/styles/all';
 /** v3 */
-@import '~@redhat-cloud-services/frontend-components-utilities/styles/all''
+@import '~@ausuliv/frontend-components-utilities/styles/all''
 
 ```
 
@@ -68,9 +68,9 @@ This module is now deprecated. Use a new Inventory component compatible with chr
 Function `parseCvssScore` has been moved to a stand-alone file. Import path has changed.
 ```jsx
 // v2
-import { parseCvssScore } from '@redhat-cloud-services/frontend-components-utilities/helpers'
+import { parseCvssScore } from '@ausuliv/frontend-components-utilities/helpers'
 // v3
-import parseCvssScore from '@redhat-cloud-services/frontend-components-utilities/parseCvssScore'
+import parseCvssScore from '@ausuliv/frontend-components-utilities/parseCvssScore'
 ```
 
 ## Documentation Links
