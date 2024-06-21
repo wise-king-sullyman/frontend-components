@@ -4,17 +4,17 @@ import ReactDOM from 'react-dom';
 import { CircleIconConfig } from '@patternfly/react-icons/dist/js/icons/circle-icon';
 import PropTypes from 'prop-types';
 import { Canvas, Text, View } from '@react-pdf/renderer';
-import { ChartBar } from '@patternfly/react-charts/dist/js/components/ChartBar';
-import { ChartPie } from '@patternfly/react-charts/dist/js/components/ChartPie';
-import { ChartDonut } from '@patternfly/react-charts/dist/js/components/ChartDonut';
-import { ChartDonutUtilization } from '@patternfly/react-charts/dist/js/components/ChartDonutUtilization';
+import { ChartBar } from '@patternfly/react-charts/dist/js/components/ChartBar/ChartBar';
+import { ChartPie } from '@patternfly/react-charts/dist/js/components/ChartPie/ChartPie';
+import { ChartDonut } from '@patternfly/react-charts/dist/js/components/ChartDonut/ChartDonut';
+import { ChartDonutUtilization } from '@patternfly/react-charts/dist/js/components/ChartDonutUtilization/ChartDonutUtilization';
 import { getLightThemeColors } from '../utils/theme/utils';
 import Table from './Table';
 import styles from '../utils/styles';
 import rgbHex from 'rgb-hex';
 import flatten from 'lodash/flatten';
-import globalPaletteBlack300 from '@patternfly/react-tokens/dist/js/global_palette_black_300';
-import globalPaletteBlack700 from '@patternfly/react-tokens/dist/js/global_palette_black_700';
+import color_gray_30 from '@patternfly/react-tokens/dist/js/color_gray_30';
+import color_gray_70 from '@patternfly/react-tokens/dist/js/color_gray_70';
 
 const appliedStyles = styles();
 const chartMapper = {
@@ -189,9 +189,9 @@ class Chart extends React.Component {
               moveTo(0, 0);
               lineTo(0, 250);
               lineTo(500, 250);
-              stroke(globalPaletteBlack300.value);
+              stroke(color_gray_30.value);
               fontSize(18);
-              fillColor(globalPaletteBlack700.value);
+              fillColor(color_gray_70.value);
 
               for (let i = 0; i < total; i++) {
                 let valueY = String(Number.isInteger(i * stepper) ? i * stepper : (i * stepper).toFixed(1));

@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Canvas, Text as PDFText, View } from '@react-pdf/renderer';
 // eslint-disable-next-line camelcase
-import global_icon_Color_light from '@patternfly/react-tokens/dist/js/global_icon_Color_light';
+import color_gray_50 from '@patternfly/react-tokens/dist/js/color_gray_50';
 
 import styles from '../utils/styles';
 
@@ -72,7 +72,7 @@ const Battery = ({ variant, text, ...props }) => {
         paint={({ path, scale }) => {
           scale(0.04);
           // eslint-disable-next-line camelcase
-          path(defaultSvg).lineWidth('41.9638').stroke(global_icon_Color_light.value).path(currBattery.svg).fill(currBattery.color);
+          path(defaultSvg).lineWidth('41.9638').stroke(color_gray_50.value).path(currBattery.svg).fill(currBattery.color);
         }}
       />
       <PDFText

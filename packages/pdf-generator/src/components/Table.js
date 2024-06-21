@@ -2,8 +2,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Text, View } from '@react-pdf/renderer';
-import global_BorderColor_300 from '@patternfly/react-tokens/dist/js/global_BorderColor_300';
-import global_BorderColor_200 from '@patternfly/react-tokens/dist/js/global_BorderColor_200';
+import color_gray_10 from '@patternfly/react-tokens/dist/js/color_gray_10';
+import color_gray_50 from '@patternfly/react-tokens/dist/js/color_gray_50';
 import { styleProps } from '../utils/propTypes';
 import styles from '../utils/styles';
 
@@ -48,10 +48,10 @@ const Table = ({ rows, withHeader, headerStyles, rowsStyle, style, ...props }) =
       <View
         style={{
           borderTopStyle: 'solid',
-          borderTopColor: global_BorderColor_200.value,
+          borderTopColor: color_gray_50.value,
           borderTopWidth: 1,
           borderBottomStyle: 'solid',
-          borderBottomColor: global_BorderColor_200.value,
+          borderBottomColor: color_gray_50.value,
           borderBottomWidth: 1,
         }}
       >
@@ -61,7 +61,7 @@ const Table = ({ rows, withHeader, headerStyles, rowsStyle, style, ...props }) =
             style={{
               ...appliedStyles.flexRow,
               ...appliedStyles.compactCellPadding,
-              ...(key % 2 && { backgroundColor: global_BorderColor_300.value }),
+              ...(key % 2 && { backgroundColor: color_gray_10.value }),
               ...rowsStyle,
             }}
           >
