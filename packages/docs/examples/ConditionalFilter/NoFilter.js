@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { createUseStyles } from 'react-jss';
-import ConditionalFilter from '@redhat-cloud-services/frontend-components/ConditionalFilter';
+import ConditionalFilter from '@ausuliv/frontend-components/ConditionalFilter';
 
 const useStyle = createUseStyles({
   container: {

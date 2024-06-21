@@ -1,5 +1,5 @@
 import React from 'react';
-import DateFormat from '@redhat-cloud-services/frontend-components/DateFormat';
+import DateFormat from '@ausuliv/frontend-components/DateFormat';
 import { Title } from '@patternfly/react-core';
 
 const TooltipProps = () => {

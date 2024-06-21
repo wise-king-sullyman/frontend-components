@@ -7,7 +7,7 @@ Import Input component and it's styles, pass which type you want to use (default
 HTML `input`.
 ```javascript
 import { Input } from '@redhat-cloud-services/frontend-components';
-import '@redhat-cloud-services/frontend-components/components/Input.css'
+import '@ausuliv/frontend-components/components/Input.css'
 import React from 'react';
 
 const MyCmp = () => (

@@ -111,7 +111,7 @@ The component is exposed with federated modules, so all you have to do is load `
 
 ```JSX
 import React from 'react';
-import AsyncComponent from '@redhat-cloud-services/frontend-components/AsyncComponent';
+import AsyncComponent from '@ausuliv/frontend-components/AsyncComponent';
 
 const MyCmp = () => {
     const [isOpen, setIsOpen] = useState(false);

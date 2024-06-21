@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
-import { Main } from '@redhat-cloud-services/frontend-components/Main';
-import { Unavailable } from '@redhat-cloud-services/frontend-components/Unavailable';
+import { Main } from '@ausuliv/frontend-components/Main';
+import { Unavailable } from '@ausuliv/frontend-components/Unavailable';
 
 const OopsPage = () => {
   useEffect(() => {

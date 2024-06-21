@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Portal, { PortalNotificationConfig } from '../Portal';
 import { clearNotifications, removeNotification } from '../redux/actions/notifications';
-import { ErrorBoundary } from '@redhat-cloud-services/frontend-components/ErrorBoundary';
+import { ErrorBoundary } from '@ausuliv/frontend-components/ErrorBoundary';
 
 export interface NotificationsState {
   notifications?: PortalNotificationConfig[];

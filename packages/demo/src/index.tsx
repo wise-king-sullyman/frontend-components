@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import PrimaryToolbar from '@redhat-cloud-services/frontend-components/PrimaryToolbar';
+import PrimaryToolbar from '@ausuliv/frontend-components/PrimaryToolbar';
 import { Button } from '@patternfly/react-core/dist/dynamic/components/Button';
 
 const MyCmp = () => {

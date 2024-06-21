@@ -1,8 +1,8 @@
 import { renderHook } from '@testing-library/react';
 import useInsightsNavigate from './useInsightsNavigate';
 import { useNavigate } from 'react-router-dom';
-import useChrome from '@redhat-cloud-services/frontend-components/useChrome';
-jest.mock('@redhat-cloud-services/frontend-components/useChrome');
+import useChrome from '@ausuliv/frontend-components/useChrome';
+jest.mock('@ausuliv/frontend-components/useChrome');
 
 jest.mock('react-router-dom', () => ({
   useNavigate: jest.fn(),

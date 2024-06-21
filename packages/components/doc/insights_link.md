@@ -11,7 +11,7 @@ Where ever you'd use a React Router `Link` component use `InsightsLink`.
 
 ```JSX
 import React from 'react';
-import InsightsLink from '@redhat-cloud-services/frontend-components/InsightsLink';
+import InsightsLink from '@ausuliv/frontend-components/InsightsLink';
 
 class YourCmp extends React.Component {
   render() {

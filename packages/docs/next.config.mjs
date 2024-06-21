@@ -36,7 +36,7 @@ const searchIgnoredStyles = (root) => {
     result = {
       ...result,
       ...glob.sync(`${path}/**/*.css`).reduce((acc, curr) => {
-        if (curr.includes('@redhat-cloud-services/frontend-components/index.css')) {
+        if (curr.includes('@ausuliv/frontend-components/index.css')) {
           return acc;
         }
         return {

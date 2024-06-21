@@ -10,8 +10,8 @@ Import Dropdown, it's item and styles from this package. Then use them wherever 
 import React from 'react';
 import { Dropdown, DropdownItem } from '@redhat-cloud-services/frontend-components';
 
-import '@redhat-cloud-services/frontend-components/components/Dropdown.css';
-// in scss file @import '~@redhat-cloud-services/frontend-components/components/Dropdown.css';
+import '@ausuliv/frontend-components/components/Dropdown.css';
+// in scss file @import '~@ausuliv/frontend-components/components/Dropdown.css';
 
 class YourCmp extends React.Component {
   constructor(props) {

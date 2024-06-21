@@ -1,4 +1,4 @@
-import PrimaryToolbar from '@redhat-cloud-services/frontend-components/PrimaryToolbar';
+import PrimaryToolbar from '@ausuliv/frontend-components/PrimaryToolbar';
 import { useState } from 'react';
 
 const ToolbarChips = () => {

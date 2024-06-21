@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
-import { Main } from '@redhat-cloud-services/frontend-components/Main';
-import { NotAuthorized } from '@redhat-cloud-services/frontend-components/NotAuthorized';
+import { Main } from '@ausuliv/frontend-components/Main';
+import { NotAuthorized } from '@ausuliv/frontend-components/NotAuthorized';
 
 const NoPermissionsPage = () => {
   useEffect(() => {

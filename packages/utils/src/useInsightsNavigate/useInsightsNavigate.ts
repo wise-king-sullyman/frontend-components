@@ -1,7 +1,7 @@
 // @ts-ignore
 import { LinkProps, useNavigate } from 'react-router-dom';
 // @ts-ignore
-import useChrome from '@redhat-cloud-services/frontend-components/useChrome';
+import useChrome from '@ausuliv/frontend-components/useChrome';
 import { buildInsightsPath } from '../helpers/urlPathHelpers';
 
 const useInsightsNavigate = (app: string, forcePreview?: boolean) => {

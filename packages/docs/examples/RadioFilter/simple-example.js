@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { RadioFilter } from '@redhat-cloud-services/frontend-components/ConditionalFilter';
+import { RadioFilter } from '@ausuliv/frontend-components/ConditionalFilter';
 import { Title } from '@patternfly/react-core';
 
 const items = [

@@ -14,7 +14,7 @@
 ## Usage
 
 ```jsx
-import useScreenSize from '@redhat-cloud-services/frontend-components/useScreenSize';
+import useScreenSize from '@ausuliv/frontend-components/useScreenSize';
 
 const DummyComponent = () => {
     const currentVariant = useScreenSize();
@@ -40,7 +40,7 @@ Current variants can be found as keys of `breakpoints` object.
 `isSmallScreen` is a simple helper that returns `true` if the current variant is a small screen.
 
 ```jsx
-import { useScreenSize, isSmallScreen } from '@redhat-cloud-services/frontend-components/useScreenSize';
+import { useScreenSize, isSmallScreen } from '@ausuliv/frontend-components/useScreenSize';
 
 const DummyComponent = () => {
     const currentVariant = useScreenSize();
@@ -62,7 +62,7 @@ Here are some tips for simple testing different screen sizes in your testing env
 1. Mock the hook
 
 ```jsx
-jest.mock('@redhat-cloud-services/frontend-components/useScreenSize', () => ({
+jest.mock('@ausuliv/frontend-components/useScreenSize', () => ({
   __esModule: true,
   isSmallScreen: (size) => size === 'sm',
   useScreenSize: () => global.mockWidth || 'md',

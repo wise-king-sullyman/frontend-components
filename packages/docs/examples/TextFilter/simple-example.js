@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TextFilter } from '@redhat-cloud-services/frontend-components/ConditionalFilter';
+import { TextFilter } from '@ausuliv/frontend-components/ConditionalFilter';
 import { Title } from '@patternfly/react-core';
 
 const RadioFilterExample = () => {

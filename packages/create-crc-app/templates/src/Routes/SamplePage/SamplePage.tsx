@@ -4,8 +4,8 @@ import { useDispatch } from 'react-redux';
 
 // eslint-disable-next-line rulesdir/forbid-pf-relative-imports
 import { Button, Spinner, Stack, StackItem, Title } from '@patternfly/react-core';
-import { Main } from '@redhat-cloud-services/frontend-components/Main';
-import { PageHeader, PageHeaderTitle } from '@redhat-cloud-services/frontend-components/PageHeader';
+import { Main } from '@ausuliv/frontend-components/Main';
+import { PageHeader, PageHeaderTitle } from '@ausuliv/frontend-components/PageHeader';
 import { addNotification } from '@redhat-cloud-services/frontend-components-notifications/redux';
 
 const SampleComponent = lazy(() => import('../../Components/SampleComponent/sample-component'));

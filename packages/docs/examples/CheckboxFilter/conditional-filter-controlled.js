@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ConditionalFilter from '@redhat-cloud-services/frontend-components/ConditionalFilter';
+import ConditionalFilter from '@ausuliv/frontend-components/ConditionalFilter';
 import { Title } from '@patternfly/react-core';
 
 export const checkboxFilterConfig = {

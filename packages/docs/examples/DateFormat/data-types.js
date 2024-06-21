@@ -1,5 +1,5 @@
 import React from 'react';
-import DateFormat from '@redhat-cloud-services/frontend-components/DateFormat';
+import DateFormat from '@ausuliv/frontend-components/DateFormat';
 
 const DifferentDateDataTypes = () => (
   <div>

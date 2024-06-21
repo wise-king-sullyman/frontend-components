@@ -20,8 +20,8 @@ If you want to use rules table component please pass entire dataset from server 
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import RuleTable, { severity } from '@redhat-cloud-services/rule-components/RuleTable';
-import { DateFormat } from '@redhat-cloud-services/frontend-components/DateFormat';
-import { Battery } from '@redhat-cloud-services/frontend-components/Battery';
+import { DateFormat } from '@ausuliv/frontend-components/DateFormat';
+import { Battery } from '@ausuliv/frontend-components/Battery';
 import {
     descriptionFilter,
     totalRiskFilter,

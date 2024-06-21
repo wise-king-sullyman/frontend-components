@@ -26,12 +26,12 @@ This package is dependent on [@ausuliv/frontend-components-utilities](https://ww
 
 ```jsx
 // v2
-import { Ansible } from '@redhat-cloud-services/frontend-components/components/cjs/Ansible';
+import { Ansible } from '@ausuliv/frontend-components/components/cjs/Ansible';
 
 // v3
-import Ansible from '@redhat-cloud-services/frontend-components/Ansible';
+import Ansible from '@ausuliv/frontend-components/Ansible';
 /** OR */
-import { Ansible } from '@redhat-cloud-services/frontend-components/Ansible';
+import { Ansible } from '@ausuliv/frontend-components/Ansible';
 ```
 
 ### Importing styles is no longer required
@@ -39,7 +39,7 @@ import { Ansible } from '@redhat-cloud-services/frontend-components/Ansible';
 Importing CSS for components is no longer required. Components import their styling whenever they are rendered for the first time.
 
 ```diff
--@import '~@redhat-cloud-services/frontend-components/index.css';
+-@import '~@ausuliv/frontend-components/index.css';
 ```
 
 ### Sub components imports.
@@ -49,9 +49,9 @@ All imports must have at most only one level!
 
 ```jsx
 // OK
-import { X } from '@redhat-cloud-services/frontend-components/<ModuleName>'
+import { X } from '@ausuliv/frontend-components/<ModuleName>'
 // Wrong!!
-import X from '@redhat-cloud-services/frontend-components/<ModuleName>/X'
+import X from '@ausuliv/frontend-components/<ModuleName>/X'
 
 ```
 Deeper imports will break automatic csj/esm module resolution.
@@ -66,7 +66,7 @@ In order not to improve your bundle size you you should either import components
 
 For speedy build times, you can use direct import paths For instance `tableToolbar` can be imported as:
 ```JSX
-import TableToolbar from '@redhat-cloud-services/frontend-components/TableToolbar';
+import TableToolbar from '@ausuliv/frontend-components/TableToolbar';
 ```
 
 You can also use shorthand imports.
@@ -99,7 +99,7 @@ module.exports = {
             {
               '@redhat-cloud-services/frontend-components': {
                 transform: (importName) =>
-                  `@redhat-cloud-services/frontend-components/${FECMapper[importName] || importName}`,
+                  `@ausuliv/frontend-components/${FECMapper[importName] || importName}`,
                 preventFullImport: false,
                 skipDefaultConversion: true
               }
@@ -115,9 +115,9 @@ As with direct imports you can choose between `esm` and `cjs` output.
 
 ```JS
 // cjs
-transform: (importName) =>`@redhat-cloud-services/frontend-components/${FECMapper[importName] || importName}`,
+transform: (importName) =>`@ausuliv/frontend-components/${FECMapper[importName] || importName}`,
 // esm
-transform: (importName) =>`@redhat-cloud-services/frontend-components/esm/${FECMapper[importName] || importName}`,
+transform: (importName) =>`@ausuliv/frontend-components/esm/${FECMapper[importName] || importName}`,
 
 ```
 

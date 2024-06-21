@@ -5,7 +5,7 @@ import React from 'react';
 import { Flex, FlexItem, Icon, Stack, StackItem, Text, TextContent, TextVariants } from '@patternfly/react-core';
 import { ExternalLinkAltIcon } from '@patternfly/react-icons';
 
-import InsightsLabel from '@redhat-cloud-services/frontend-components/InsightsLabel';
+import InsightsLabel from '@ausuliv/frontend-components/InsightsLabel';
 import { SeverityLine } from '@redhat-cloud-services/frontend-components-charts/SeverityLine';
 
 import RebootRequired from '../RebootRequired/RebootRequired';

@@ -14,7 +14,7 @@ const renderSnippet = `import React from 'react';
 import ReactDOM from 'react-dom'
 import '@patternfly/react-core/dist/styles/base.css';
 import Example from './example'
-import '@redhat-cloud-services/frontend-components/index.css'
+import '@ausuliv/frontend-components/index.css'
 
 ReactDOM.render(<Example />, document.getElementById('root'));
 

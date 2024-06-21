@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { GroupFilter } from '@redhat-cloud-services/frontend-components/ConditionalFilter';
+import { GroupFilter } from '@ausuliv/frontend-components/ConditionalFilter';
 import { Title } from '@patternfly/react-core';
 
 const items = [
