@@ -1,7 +1,7 @@
 import './RebootRequired.scss';
 
 import React from 'react';
-import { Icon, Text, TextContent, TextVariants } from '@patternfly/react-core';
+import { Icon, Content, ContentVariants } from '@patternfly/react-core';
 import { PowerOffIcon } from '@patternfly/react-icons';
 
 import { RuleDetailsMessages } from '../RuleDetails/RuleDetails';
@@ -16,9 +16,9 @@ const RebootRequired: React.FC<RebootRequiredProps> = ({ messages, rebootRequire
     <Icon>
       <PowerOffIcon className={rebootRequired ? 'reboot-required-icon' : 'no-reboot-required-icon'} />
     </Icon>
-    <TextContent className="system-reboot-message__content">
-      <Text component={TextVariants.p}>{messages.systemReboot}</Text>
-    </TextContent>
+    <Content className="system-reboot-message__content">
+      <Content component={ContentVariants.p}>{messages.systemReboot}</Content>
+    </Content>
   </span>
 );
 

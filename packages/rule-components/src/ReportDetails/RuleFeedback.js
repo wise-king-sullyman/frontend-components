@@ -27,26 +27,22 @@ class RuleFeedback extends React.Component {
     return (
       <div>
         <span>Is this helpful?</span>
-        <Button
+        <Button icon={<Icon color={userVote === feedback.positive ? 'var(--pf-t--global--color--status--success--default)' : undefined}>
+            {userVote === feedback.positive ? <ThumbsUpIcon /> : <OutlinedThumbsUpIcon />}
+          </Icon>}
           className="ins-c-rule__rule-feedback-like-button"
           variant="plain"
           aria-label="Rule is helpful"
           onClick={() => this.handleFeedbackChange(feedback.positive)}
-        >
-          <Icon color={userVote === feedback.positive ? 'var(--pf-t--global--color--status--success--default)' : undefined}>
-            {userVote === feedback.positive ? <ThumbsUpIcon /> : <OutlinedThumbsUpIcon />}
-          </Icon>
-        </Button>
-        <Button
+        ></Button>
+        <Button icon={<Icon color={userVote === feedback.negative ? 'var(--pf-t--global--text--color--regular)' : undefined}>
+            {userVote === feedback.negative ? <ThumbsDownIcon /> : <OutlinedThumbsDownIcon />}
+          </Icon>}
           className="ins-c-rule__rule-feedback-dislike-button"
           variant="plain"
           aria-label="Rule is not helpful"
           onClick={() => this.handleFeedbackChange(feedback.negative)}
-        >
-          <Icon color={userVote === feedback.negative ? 'var(--pf-t--global--text--color--regular)' : undefined}>
-            {userVote === feedback.negative ? <ThumbsDownIcon /> : <OutlinedThumbsDownIcon />}
-          </Icon>
-        </Button>
+        ></Button>
         {this.state.feedbackSaved && 'Thank you for your feedback!'}
       </div>
     );

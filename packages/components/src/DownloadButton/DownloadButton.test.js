@@ -2,10 +2,10 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import DownloadButton from './DownloadButton';
-import { DropdownItem } from '@patternfly/react-core/deprecated';
+import { MenuItem } from '@patternfly/react-core';
 import { act } from 'react-dom/test-utils';
 
-const extraItems = [<DropdownItem key="extra-1" component="button"></DropdownItem>];
+const extraItems = [<MenuItem key="extra-1" component="button"></MenuItem>];
 
 describe('DownloadButton component', () => {
   describe('should render', () => {

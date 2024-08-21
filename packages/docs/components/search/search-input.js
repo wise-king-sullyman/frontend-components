@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import PropTypes from 'prop-types';
-import { Bullseye, Menu, MenuContent, MenuItem, MenuList, Popper, SearchInput, Spinner, Text, TextContent, Title } from '@patternfly/react-core';
+import { Bullseye, Menu, MenuContent, MenuItem, MenuList, Popper, SearchInput, Spinner, Content, Title } from '@patternfly/react-core';
 import Link from 'next/link';
 import { createUseStyles } from 'react-jss';
 import { useRouter } from 'next/router';
@@ -116,9 +116,9 @@ const DocSearch = ({ className }) => {
         setAutocompleteOptions([
           <MenuItem key="empty">
             <Bullseye>
-              <TextContent className="pf-v6-u-m-xl">
-                <Text>We looked everywhere but found nothing. Try something different.</Text>
-              </TextContent>
+              <Content className="pf-v6-u-m-xl">
+                <Content component="p">We looked everywhere but found nothing. Try something different.</Content>
+              </Content>
             </Bullseye>
           </MenuItem>,
         ]);
@@ -134,11 +134,11 @@ const DocSearch = ({ className }) => {
                 <Title className={classes.ellipsis} headingLevel="h2" size="md">
                   {processLinkOption(newValue, option.value, classes)}
                 </Title>
-                <TextContent>
-                  <Text className={classes.ellipsis} component="small">
+                <Content>
+                  <Content className={classes.ellipsis} component="small">
                     {adjustResultURL(adjustedUrl)}
-                  </Text>
-                </TextContent>
+                  </Content>
+                </Content>
               </a>
             </Link>
           </MenuItem>

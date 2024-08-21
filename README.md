@@ -36,7 +36,7 @@ const glob = require('glob');
 
 // list of custom named exports, this is just a few, and you should probably update it to fit your project
 const mapper = {
-  TextVariants: 'Text',
+  ContentVariants: 'Content',
   DropdownPosition: 'dropdownConstants',
   EmptyStateVariant: 'EmptyState',
   TextListItemVariants: 'TextListItem',

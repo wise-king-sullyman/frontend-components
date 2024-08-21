@@ -130,7 +130,7 @@ const Layout = ({ children }) => {
         </Split>
       </div>
 
-      <PageSection className={classes.footer} isFilled={false}>
+      <PageSection hasBodyWrapper={false} className={classes.footer} isFilled={false}>
         <Footer className="pf-v6-u-my-xl pf-v6-u-mx-md">
           <Flex
             direction={{ default: 'column', md: 'row' }}

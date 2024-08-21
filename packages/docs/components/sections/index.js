@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bullseye, Card, CardBody, CardTitle, Gallery, GalleryItem, Text, TextVariants, Title } from '@patternfly/react-core';
+import { Bullseye, Card, CardBody, CardTitle, Gallery, GalleryItem, Content, ContentVariants, Title } from '@patternfly/react-core';
 import Link from 'next/link';
 import { createUseStyles } from 'react-jss';
 import classnames from 'classnames';
@@ -51,9 +51,9 @@ const Sections = () => {
                   </Bullseye>
                 </CardTitle>
                 <CardBody className={classes.cardBody}>
-                  <Text className={classnames('pf-v6-u-py-md', classes.description)} component={TextVariants.p}>
+                  <Content className={classnames('pf-v6-u-py-md', classes.description)} component={ContentVariants.p}>
                     {typeof description === 'object' ? description : truncate(description, { length: '135' })}
-                  </Text>
+                  </Content>
                 </CardBody>
               </Card>
             </a>

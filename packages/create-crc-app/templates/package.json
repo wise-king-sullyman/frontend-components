@@ -20,8 +20,8 @@
     "verify": "npm-run-all build lint test"
   },
   "dependencies": {
-    "@patternfly/react-core": "6.0.0-alpha.61",
-    "@patternfly/react-table": "6.0.0-alpha.70",
+    "@patternfly/react-core": "6.0.0-alpha.100",
+    "@patternfly/react-table": "6.0.0-alpha.101",
     "@ausuliv/frontend-components": "^4.2.9",
     "@ausuliv/frontend-components-notifications": "^4.1.1",
     "@ausuliv/frontend-components-utilities": "^4.0.10",

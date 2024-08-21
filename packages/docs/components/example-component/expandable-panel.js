@@ -88,37 +88,29 @@ const ExpandablePanel = ({ codeOnly, language, sourceCode, source }) => {
           <ToolbarItem className={classes.firstItem}>
             {!codeOnly && (
               <Tooltip content={<p>Open code example</p>}>
-                <Button variant="plain" onClick={() => setIsOpen((prev) => !prev)}>
-                  <CodeIcon
+                <Button icon={<CodeIcon
                     className={classnames(classes.iconExpand, {
                       [classes.inconExpandExpanded]: isOpen,
                     })}
-                  />
-                </Button>
+                  />} variant="plain" onClick={() => setIsOpen((prev) => !prev)}></Button>
               </Tooltip>
             )}
             <Tooltip content={<div>Copy code to clipboard</div>}>
-              <Button variant="plain" onClick={copyToClipboard}>
-                <CopyIcon />
-              </Button>
+              <Button icon={<CopyIcon />} variant="plain" onClick={copyToClipboard}></Button>
             </Tooltip>
             <Tooltip content={<div>View source on GitHub</div>}>
-              <Button
+              <Button icon={<GithubIcon />}
                 component="a"
                 target="_blank"
                 href={`https://github.com/RedHatInsights/frontend-components/tree/master/packages/docs/examples/${source}.js`}
                 variant="plain"
-              >
-                <GithubIcon />
-              </Button>
+              ></Button>
             </Tooltip>
             <Tooltip content={<div>Open example in codesandbox</div>}>
               <div>
                 <form action="https://codesandbox.io/api/v1/sandboxes/define" method="POST" target="_blank">
                   <input type="hidden" name="parameters" value={createCodeSandboxExample(sourceCode)} />
-                  <Button className={classes.imageIconButton} type="submit" variant="plain">
-                    <CodesandboxIcon />
-                  </Button>
+                  <Button icon={<CodesandboxIcon />} className={classes.imageIconButton} type="submit" variant="plain"></Button>
                 </form>
               </div>
             </Tooltip>

@@ -16,9 +16,7 @@ const treeTableDecorator =
         <div className="pf-v6-c-treeview__control">
           {rowData.isTreeOpen !== undefined && (
             <div className="pf-v6-c-treeview__toggle">
-              <Button variant="plain" onClick={(event) => onCollapse && onCollapse(event, value, { rowData, ...props })}>
-                <AngleRightIcon className="pf-v6-c-treeview__toggle-icon" aria-hidden="true" />
-              </Button>
+              <Button icon={<AngleRightIcon className="pf-v6-c-treeview__toggle-icon" aria-hidden="true" />} variant="plain" onClick={(event) => onCollapse && onCollapse(event, value, { rowData, ...props })}></Button>
             </div>
           )}
           <div className="pf-v6-c-treeview__control-text">{typeof value === 'object' ? value.title : value}</div>

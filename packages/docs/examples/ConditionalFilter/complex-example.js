@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ConditionalFilter from '@ausuliv/frontend-components/ConditionalFilter';
-import { TextContent, TextList, TextListItem, TextListItemVariants, TextListVariants } from '@patternfly/react-core';
+import { Content, TextListItemVariants, TextListVariants } from '@patternfly/react-core';
 
 const groups = [
   {
@@ -98,38 +98,38 @@ const CFExample = () => {
   const [filterBy, setFilterBy] = useState('');
   return (
     <div>
-      <TextContent>
-        <TextList component={TextListVariants.dl}>
-          <TextListItem component={TextListItemVariants.dt}>Selected groups</TextListItem>
-          <TextListItem component={TextListItemVariants.dd}>
+      <Content>
+        <Content component={TextListVariants.dl}>
+          <Content component={TextListItemVariants.dt}>Selected groups</Content>
+          <Content component={TextListItemVariants.dd}>
             <code>{JSON.stringify(groupsSelected || {}, null, 2)}</code>
-          </TextListItem>
-        </TextList>
-        <TextList component={TextListVariants.dl}>
-          <TextListItem component={TextListItemVariants.dt}>Selected TreeView</TextListItem>
-          <TextListItem component={TextListItemVariants.dd}>
+          </Content>
+        </Content>
+        <Content component={TextListVariants.dl}>
+          <Content component={TextListItemVariants.dt}>Selected TreeView</Content>
+          <Content component={TextListItemVariants.dd}>
             <code>{JSON.stringify(treeViewSelected || {}, null, 2)}</code>
-          </TextListItem>
-        </TextList>
-        <TextList component={TextListVariants.dl}>
-          <TextListItem component={TextListItemVariants.dt}>Selected checkbox</TextListItem>
-          <TextListItem component={TextListItemVariants.dd}>
+          </Content>
+        </Content>
+        <Content component={TextListVariants.dl}>
+          <Content component={TextListItemVariants.dt}>Selected checkbox</Content>
+          <Content component={TextListItemVariants.dd}>
             <code>{JSON.stringify(checkboxSelected || {}, null, 2)}</code>
-          </TextListItem>
-        </TextList>
-        <TextList component={TextListVariants.dl}>
-          <TextListItem component={TextListItemVariants.dt}>Selected radio</TextListItem>
-          <TextListItem component={TextListItemVariants.dd}>
+          </Content>
+        </Content>
+        <Content component={TextListVariants.dl}>
+          <Content component={TextListItemVariants.dt}>Selected radio</Content>
+          <Content component={TextListItemVariants.dd}>
             <code>{JSON.stringify(radioSelected || [], null, 2)}</code>
-          </TextListItem>
-        </TextList>
-        <TextList component={TextListVariants.dl}>
-          <TextListItem component={TextListItemVariants.dt}>Text filter</TextListItem>
-          <TextListItem component={TextListItemVariants.dd}>
+          </Content>
+        </Content>
+        <Content component={TextListVariants.dl}>
+          <Content component={TextListItemVariants.dt}>Text filter</Content>
+          <Content component={TextListItemVariants.dd}>
             <code>{textValue}</code>
-          </TextListItem>
-        </TextList>
-      </TextContent>
+          </Content>
+        </Content>
+      </Content>
       <ConditionalFilter
         items={[
           {

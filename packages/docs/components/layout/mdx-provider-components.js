@@ -4,13 +4,10 @@ import {
   Button,
   Card,
   CardBody,
-  Text,
-  TextContent,
-  TextList,
-  TextListItem,
+  Content,
   TextListItemVariants,
   TextListVariants,
-  TextVariants,
+  ContentVariants,
   Title,
 } from '@patternfly/react-core';
 import { createUseStyles } from 'react-jss';
@@ -50,9 +47,7 @@ function addLinkAnchor(Component) {
         <Component className={classnames(className, 'docs-content-link')} {...props}>
           <a id={anchor} className={classes.anchor} href={`#${anchor}`}>
             {props.children}
-            <Button className={classes.anchorIcon} component="span" variant="plain">
-              <LinkIcon />
-            </Button>
+            <Button icon={<LinkIcon />} className={classes.anchorIcon} component="span" variant="plain"></Button>
           </a>
         </Component>
       );
@@ -104,24 +99,24 @@ const Code = ({ children, className }) =>
     <code>{children}</code>
   );
 
-const Li = ({ children }) => <TextListItem component={TextListItemVariants.li}>{children}</TextListItem>;
+const Li = ({ children }) => <Content component={TextListItemVariants.li}>{children}</Content>;
 
 const OrderedList = ({ children }) => (
-  <TextContent>
-    <TextList component={TextListVariants.ol}>{children}</TextList>
-  </TextContent>
+  <Content>
+    <Content component={TextListVariants.ol}>{children}</Content>
+  </Content>
 );
 
 export const UnorderedList = ({ children }) => (
-  <TextContent>
-    <TextList component={TextListVariants.ul}>{children}</TextList>
-  </TextContent>
+  <Content>
+    <Content component={TextListVariants.ul}>{children}</Content>
+  </Content>
 );
 
 export const Paragraph = ({ children, className }) => (
-  <TextContent className={className}>
-    <Text component={TextVariants.p}>{children}</Text>
-  </TextContent>
+  <Content className={className}>
+    <Content component={ContentVariants.p}>{children}</Content>
+  </Content>
 );
 
 const components = {
