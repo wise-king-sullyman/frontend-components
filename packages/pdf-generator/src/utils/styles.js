@@ -7,9 +7,9 @@ import chart_global_warning_Color_200 from '@patternfly/react-tokens/dist/js/t_c
 import chart_global_warning_Color_100 from '@patternfly/react-tokens/dist/js/t_chart_global_warning_Color_100';
 import t_global_text_color_regular from '@patternfly/react-tokens/dist/js/t_global_text_color_regular';
 import t_global_text_color_brand_default from '@patternfly/react-tokens/dist/js/t_global_text_color_brand_default';
-import chart_color_red_100 from '@patternfly/react-tokens/dist/js/chart_color_red_100';
-import chart_color_red_200 from '@patternfly/react-tokens/dist/js/chart_color_red_200';
-import chart_color_red_300 from '@patternfly/react-tokens/dist/js/chart_color_red_300';
+import chart_color_red_100 from '@patternfly/react-tokens/dist/js/t_chart_color_red_orange_100';
+import chart_color_red_200 from '@patternfly/react-tokens/dist/js/t_chart_color_red_orange_200';
+import chart_color_red_300 from '@patternfly/react-tokens/dist/js/t_chart_color_red_orange_300';
 import t_global_icon_color_status_info_default from '@patternfly/react-tokens/dist/js/t_global_icon_color_status_info_default';
 import t_global_color_status_info_default from '@patternfly/react-tokens/dist/js/t_global_color_status_info_default';
 import t_global_text_color_status_info_default from '@patternfly/react-tokens/dist/js/t_global_text_color_status_info_default';
