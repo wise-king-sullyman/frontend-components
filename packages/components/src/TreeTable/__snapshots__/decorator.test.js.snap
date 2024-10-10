@@ -2,10 +2,10 @@
 
 exports[`TreeTable decorator should render correctly - with data 1`] = `
 <div
-  className="pf-v5-c-treeview__control"
+  className="pf-v6-c-treeview__control"
 >
   <div
-    className="pf-v5-c-treeview__control-text"
+    className="pf-v6-c-treeview__control-text"
   >
     value
   </div>
@@ -14,23 +14,24 @@ exports[`TreeTable decorator should render correctly - with data 1`] = `
 
 exports[`TreeTable decorator should render correctly - with data tree collapsed 1`] = `
 <div
-  className="pf-v5-c-treeview__control"
+  className="pf-v6-c-treeview__control"
 >
   <div
-    className="pf-v5-c-treeview__toggle"
+    className="pf-v6-c-treeview__toggle"
   >
     <Button
+      icon={
+        <AngleRightIcon
+          aria-hidden="true"
+          className="pf-v6-c-treeview__toggle-icon"
+        />
+      }
       onClick={[Function]}
       variant="plain"
-    >
-      <AngleRightIcon
-        aria-hidden="true"
-        className="pf-v5-c-treeview__toggle-icon"
-      />
-    </Button>
+    />
   </div>
   <div
-    className="pf-v5-c-treeview__control-text"
+    className="pf-v6-c-treeview__control-text"
   >
     value
   </div>
@@ -39,23 +40,24 @@ exports[`TreeTable decorator should render correctly - with data tree collapsed 
 
 exports[`TreeTable decorator should render correctly - with data tree opened 1`] = `
 <div
-  className="pf-v5-c-treeview__control"
+  className="pf-v6-c-treeview__control"
 >
   <div
-    className="pf-v5-c-treeview__toggle"
+    className="pf-v6-c-treeview__toggle"
   >
     <Button
+      icon={
+        <AngleRightIcon
+          aria-hidden="true"
+          className="pf-v6-c-treeview__toggle-icon"
+        />
+      }
       onClick={[Function]}
       variant="plain"
-    >
-      <AngleRightIcon
-        aria-hidden="true"
-        className="pf-v5-c-treeview__toggle-icon"
-      />
-    </Button>
+    />
   </div>
   <div
-    className="pf-v5-c-treeview__control-text"
+    className="pf-v6-c-treeview__control-text"
   >
     value
   </div>

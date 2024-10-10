@@ -3,31 +3,33 @@
 exports[`ConditionalFilter render should render correctly - isDisabled 1`] = `
 <div>
   <div
-    class="pf-v5-l-split ins-c-conditional-filter"
+    class="pf-v6-l-split ins-c-conditional-filter"
   >
     <div
-      class="pf-v5-l-split__item"
+      class="pf-v6-l-split__item"
     >
       <button
         aria-expanded="false"
         aria-label="Conditional filter toggle"
-        class="pf-v5-c-menu-toggle pf-m-disabled ins-c-conditional-filter__group"
-        data-ouia-component-id="ConditionalFilterToggle"
+        class="pf-v6-c-menu-toggle pf-m-disabled ins-c-conditional-filter__group"
+        data-ouia-component-id="OUIA-Generated-MenuToggle-1"
+        data-ouia-component-type="PF6/MenuToggle"
+        data-ouia-safe="true"
         disabled=""
         type="button"
       >
         <span
-          class="pf-v5-c-menu-toggle__text"
+          class="pf-v6-c-menu-toggle__icon"
         >
           <span
-            class="pf-v5-c-icon pf-m-md"
+            class="pf-v6-c-icon pf-m-md"
           >
             <span
-              class="pf-v5-c-icon__content"
+              class="pf-v6-c-icon__content"
             >
               <svg
                 aria-hidden="true"
-                class="pf-v5-svg"
+                class="pf-v6-svg"
                 fill="currentColor"
                 height="1em"
                 role="img"
@@ -40,6 +42,10 @@ exports[`ConditionalFilter render should render correctly - isDisabled 1`] = `
               </svg>
             </span>
           </span>
+        </span>
+        <span
+          class="pf-v6-c-menu-toggle__text"
+        >
           <span
             class="ins-c-conditional-filter__value-selector"
           >
@@ -47,14 +53,14 @@ exports[`ConditionalFilter render should render correctly - isDisabled 1`] = `
           </span>
         </span>
         <span
-          class="pf-v5-c-menu-toggle__controls"
+          class="pf-v6-c-menu-toggle__controls"
         >
           <span
-            class="pf-v5-c-menu-toggle__toggle-icon"
+            class="pf-v6-c-menu-toggle__toggle-icon"
           >
             <svg
               aria-hidden="true"
-              class="pf-v5-svg"
+              class="pf-v6-svg"
               fill="currentColor"
               height="1em"
               role="img"
@@ -70,17 +76,17 @@ exports[`ConditionalFilter render should render correctly - isDisabled 1`] = `
       </button>
     </div>
     <div
-      class="pf-v5-l-split__item pf-m-fill"
+      class="pf-v6-l-split__item pf-m-fill"
       data-ouia-component-id="ConditionalFilter"
     >
       <span
-        class="pf-v5-c-form-control pf-m-icon ins-c-conditional-filter"
+        class="pf-v6-c-form-control pf-m-icon ins-c-conditional-filter"
       >
         <input
           aria-invalid="false"
           aria-label="text input"
           data-ouia-component-id="ConditionalFilter"
-          data-ouia-component-type="PF5/TextInput"
+          data-ouia-component-type="PF6/TextInput"
           data-ouia-safe="true"
           placeholder="Filter by simple text 1"
           type="text"
@@ -88,20 +94,20 @@ exports[`ConditionalFilter render should render correctly - isDisabled 1`] = `
           widget-type="InsightsInput"
         />
         <span
-          class="pf-v5-c-form-control__utilities"
+          class="pf-v6-c-form-control__utilities"
         >
           <span
-            class="pf-v5-c-form-control__icon"
+            class="pf-v6-c-form-control__icon"
           >
             <span
-              class="pf-v5-c-icon pf-m-md ins-c-search-icon"
+              class="pf-v6-c-icon pf-m-md ins-c-search-icon"
             >
               <span
-                class="pf-v5-c-icon__content"
+                class="pf-v6-c-icon__content"
               >
                 <svg
                   aria-hidden="true"
-                  class="pf-v5-svg"
+                  class="pf-v6-svg"
                   fill="currentColor"
                   height="1em"
                   role="img"
@@ -128,13 +134,13 @@ exports[`ConditionalFilter render should render correctly 1`] = `
     class="ins-c-conditional-filter"
   >
     <span
-      class="pf-v5-c-form-control pf-m-icon ins-c-conditional-filter"
+      class="pf-v6-c-form-control pf-m-icon ins-c-conditional-filter"
     >
       <input
         aria-invalid="false"
         aria-label="text input"
         data-ouia-component-id="ConditionalFilter"
-        data-ouia-component-type="PF5/TextInput"
+        data-ouia-component-type="PF6/TextInput"
         data-ouia-safe="true"
         id="default-input"
         type="text"
@@ -142,20 +148,20 @@ exports[`ConditionalFilter render should render correctly 1`] = `
         widget-type="InsightsInput"
       />
       <span
-        class="pf-v5-c-form-control__utilities"
+        class="pf-v6-c-form-control__utilities"
       >
         <span
-          class="pf-v5-c-form-control__icon"
+          class="pf-v6-c-form-control__icon"
         >
           <span
-            class="pf-v5-c-icon pf-m-md ins-c-search-icon"
+            class="pf-v6-c-icon pf-m-md ins-c-search-icon"
           >
             <span
-              class="pf-v5-c-icon__content"
+              class="pf-v6-c-icon__content"
             >
               <svg
                 aria-hidden="true"
-                class="pf-v5-svg"
+                class="pf-v6-svg"
                 fill="currentColor"
                 height="1em"
                 role="img"
@@ -178,30 +184,32 @@ exports[`ConditionalFilter render should render correctly 1`] = `
 exports[`ConditionalFilter render should render correctly checkbox with value checkbox-filter 1`] = `
 <div>
   <div
-    class="pf-v5-l-split ins-c-conditional-filter"
+    class="pf-v6-l-split ins-c-conditional-filter"
   >
     <div
-      class="pf-v5-l-split__item"
+      class="pf-v6-l-split__item"
     >
       <button
         aria-expanded="false"
         aria-label="Conditional filter toggle"
-        class="pf-v5-c-menu-toggle ins-c-conditional-filter__group"
-        data-ouia-component-id="ConditionalFilterToggle"
+        class="pf-v6-c-menu-toggle ins-c-conditional-filter__group"
+        data-ouia-component-id="OUIA-Generated-MenuToggle-6"
+        data-ouia-component-type="PF6/MenuToggle"
+        data-ouia-safe="true"
         type="button"
       >
         <span
-          class="pf-v5-c-menu-toggle__text"
+          class="pf-v6-c-menu-toggle__icon"
         >
           <span
-            class="pf-v5-c-icon pf-m-md"
+            class="pf-v6-c-icon pf-m-md"
           >
             <span
-              class="pf-v5-c-icon__content"
+              class="pf-v6-c-icon__content"
             >
               <svg
                 aria-hidden="true"
-                class="pf-v5-svg"
+                class="pf-v6-svg"
                 fill="currentColor"
                 height="1em"
                 role="img"
@@ -214,6 +222,10 @@ exports[`ConditionalFilter render should render correctly checkbox with value ch
               </svg>
             </span>
           </span>
+        </span>
+        <span
+          class="pf-v6-c-menu-toggle__text"
+        >
           <span
             class="ins-c-conditional-filter__value-selector"
           >
@@ -221,14 +233,14 @@ exports[`ConditionalFilter render should render correctly checkbox with value ch
           </span>
         </span>
         <span
-          class="pf-v5-c-menu-toggle__controls"
+          class="pf-v6-c-menu-toggle__controls"
         >
           <span
-            class="pf-v5-c-menu-toggle__toggle-icon"
+            class="pf-v6-c-menu-toggle__toggle-icon"
           >
             <svg
               aria-hidden="true"
-              class="pf-v5-svg"
+              class="pf-v6-svg"
               fill="currentColor"
               height="1em"
               role="img"
@@ -244,29 +256,32 @@ exports[`ConditionalFilter render should render correctly checkbox with value ch
       </button>
     </div>
     <div
-      class="pf-v5-l-split__item pf-m-fill"
+      class="pf-v6-l-split__item pf-m-fill"
       data-ouia-component-id="ConditionalFilter"
     >
       <button
         aria-expanded="false"
         aria-label="Options menu"
-        class="pf-v5-c-menu-toggle pf-m-full-width"
+        class="pf-v6-c-menu-toggle pf-m-full-width"
+        data-ouia-component-id="OUIA-Generated-MenuToggle-7"
+        data-ouia-component-type="PF6/MenuToggle"
+        data-ouia-safe="true"
         type="button"
       >
         <span
-          class="pf-v5-c-menu-toggle__text"
+          class="pf-v6-c-menu-toggle__text"
         >
           Filter by checkbox
         </span>
         <span
-          class="pf-v5-c-menu-toggle__controls"
+          class="pf-v6-c-menu-toggle__controls"
         >
           <span
-            class="pf-v5-c-menu-toggle__toggle-icon"
+            class="pf-v6-c-menu-toggle__toggle-icon"
           >
             <svg
               aria-hidden="true"
-              class="pf-v5-svg"
+              class="pf-v6-svg"
               fill="currentColor"
               height="1em"
               role="img"
@@ -288,30 +303,32 @@ exports[`ConditionalFilter render should render correctly checkbox with value ch
 exports[`ConditionalFilter render should render correctly no value with value  1`] = `
 <div>
   <div
-    class="pf-v5-l-split ins-c-conditional-filter"
+    class="pf-v6-l-split ins-c-conditional-filter"
   >
     <div
-      class="pf-v5-l-split__item"
+      class="pf-v6-l-split__item"
     >
       <button
         aria-expanded="false"
         aria-label="Conditional filter toggle"
-        class="pf-v5-c-menu-toggle ins-c-conditional-filter__group"
-        data-ouia-component-id="ConditionalFilterToggle"
+        class="pf-v6-c-menu-toggle ins-c-conditional-filter__group"
+        data-ouia-component-id="OUIA-Generated-MenuToggle-10"
+        data-ouia-component-type="PF6/MenuToggle"
+        data-ouia-safe="true"
         type="button"
       >
         <span
-          class="pf-v5-c-menu-toggle__text"
+          class="pf-v6-c-menu-toggle__icon"
         >
           <span
-            class="pf-v5-c-icon pf-m-md"
+            class="pf-v6-c-icon pf-m-md"
           >
             <span
-              class="pf-v5-c-icon__content"
+              class="pf-v6-c-icon__content"
             >
               <svg
                 aria-hidden="true"
-                class="pf-v5-svg"
+                class="pf-v6-svg"
                 fill="currentColor"
                 height="1em"
                 role="img"
@@ -324,6 +341,10 @@ exports[`ConditionalFilter render should render correctly no value with value  1
               </svg>
             </span>
           </span>
+        </span>
+        <span
+          class="pf-v6-c-menu-toggle__text"
+        >
           <span
             class="ins-c-conditional-filter__value-selector"
           >
@@ -331,14 +352,14 @@ exports[`ConditionalFilter render should render correctly no value with value  1
           </span>
         </span>
         <span
-          class="pf-v5-c-menu-toggle__controls"
+          class="pf-v6-c-menu-toggle__controls"
         >
           <span
-            class="pf-v5-c-menu-toggle__toggle-icon"
+            class="pf-v6-c-menu-toggle__toggle-icon"
           >
             <svg
               aria-hidden="true"
-              class="pf-v5-svg"
+              class="pf-v6-svg"
               fill="currentColor"
               height="1em"
               role="img"
@@ -354,17 +375,17 @@ exports[`ConditionalFilter render should render correctly no value with value  1
       </button>
     </div>
     <div
-      class="pf-v5-l-split__item pf-m-fill"
+      class="pf-v6-l-split__item pf-m-fill"
       data-ouia-component-id="ConditionalFilter"
     >
       <span
-        class="pf-v5-c-form-control pf-m-icon ins-c-conditional-filter"
+        class="pf-v6-c-form-control pf-m-icon ins-c-conditional-filter"
       >
         <input
           aria-invalid="false"
           aria-label="text input"
           data-ouia-component-id="ConditionalFilter"
-          data-ouia-component-type="PF5/TextInput"
+          data-ouia-component-type="PF6/TextInput"
           data-ouia-safe="true"
           placeholder="Filter by simple text 1"
           type="text"
@@ -372,20 +393,20 @@ exports[`ConditionalFilter render should render correctly no value with value  1
           widget-type="InsightsInput"
         />
         <span
-          class="pf-v5-c-form-control__utilities"
+          class="pf-v6-c-form-control__utilities"
         >
           <span
-            class="pf-v5-c-form-control__icon"
+            class="pf-v6-c-form-control__icon"
           >
             <span
-              class="pf-v5-c-icon pf-m-md ins-c-search-icon"
+              class="pf-v6-c-icon pf-m-md ins-c-search-icon"
             >
               <span
-                class="pf-v5-c-icon__content"
+                class="pf-v6-c-icon__content"
               >
                 <svg
                   aria-hidden="true"
-                  class="pf-v5-svg"
+                  class="pf-v6-svg"
                   fill="currentColor"
                   height="1em"
                   role="img"
@@ -409,30 +430,32 @@ exports[`ConditionalFilter render should render correctly no value with value  1
 exports[`ConditionalFilter render should render correctly radio filter with value radio-filter 1`] = `
 <div>
   <div
-    class="pf-v5-l-split ins-c-conditional-filter"
+    class="pf-v6-l-split ins-c-conditional-filter"
   >
     <div
-      class="pf-v5-l-split__item"
+      class="pf-v6-l-split__item"
     >
       <button
         aria-expanded="false"
         aria-label="Conditional filter toggle"
-        class="pf-v5-c-menu-toggle ins-c-conditional-filter__group"
-        data-ouia-component-id="ConditionalFilterToggle"
+        class="pf-v6-c-menu-toggle ins-c-conditional-filter__group"
+        data-ouia-component-id="OUIA-Generated-MenuToggle-8"
+        data-ouia-component-type="PF6/MenuToggle"
+        data-ouia-safe="true"
         type="button"
       >
         <span
-          class="pf-v5-c-menu-toggle__text"
+          class="pf-v6-c-menu-toggle__icon"
         >
           <span
-            class="pf-v5-c-icon pf-m-md"
+            class="pf-v6-c-icon pf-m-md"
           >
             <span
-              class="pf-v5-c-icon__content"
+              class="pf-v6-c-icon__content"
             >
               <svg
                 aria-hidden="true"
-                class="pf-v5-svg"
+                class="pf-v6-svg"
                 fill="currentColor"
                 height="1em"
                 role="img"
@@ -445,6 +468,10 @@ exports[`ConditionalFilter render should render correctly radio filter with valu
               </svg>
             </span>
           </span>
+        </span>
+        <span
+          class="pf-v6-c-menu-toggle__text"
+        >
           <span
             class="ins-c-conditional-filter__value-selector"
           >
@@ -452,14 +479,14 @@ exports[`ConditionalFilter render should render correctly radio filter with valu
           </span>
         </span>
         <span
-          class="pf-v5-c-menu-toggle__controls"
+          class="pf-v6-c-menu-toggle__controls"
         >
           <span
-            class="pf-v5-c-menu-toggle__toggle-icon"
+            class="pf-v6-c-menu-toggle__toggle-icon"
           >
             <svg
               aria-hidden="true"
-              class="pf-v5-svg"
+              class="pf-v6-svg"
               fill="currentColor"
               height="1em"
               role="img"
@@ -475,29 +502,32 @@ exports[`ConditionalFilter render should render correctly radio filter with valu
       </button>
     </div>
     <div
-      class="pf-v5-l-split__item pf-m-fill"
+      class="pf-v6-l-split__item pf-m-fill"
       data-ouia-component-id="ConditionalFilter"
     >
       <button
         aria-expanded="false"
         aria-label="Options menu"
-        class="pf-v5-c-menu-toggle pf-m-full-width"
+        class="pf-v6-c-menu-toggle pf-m-full-width"
+        data-ouia-component-id="OUIA-Generated-MenuToggle-9"
+        data-ouia-component-type="PF6/MenuToggle"
+        data-ouia-safe="true"
         type="button"
       >
         <span
-          class="pf-v5-c-menu-toggle__text"
+          class="pf-v6-c-menu-toggle__text"
         >
           Filter by radio filter
         </span>
         <span
-          class="pf-v5-c-menu-toggle__controls"
+          class="pf-v6-c-menu-toggle__controls"
         >
           <span
-            class="pf-v5-c-menu-toggle__toggle-icon"
+            class="pf-v6-c-menu-toggle__toggle-icon"
           >
             <svg
               aria-hidden="true"
-              class="pf-v5-svg"
+              class="pf-v6-svg"
               fill="currentColor"
               height="1em"
               role="img"
@@ -519,30 +549,32 @@ exports[`ConditionalFilter render should render correctly radio filter with valu
 exports[`ConditionalFilter render should render correctly simple text 1 with value simple-text-1 1`] = `
 <div>
   <div
-    class="pf-v5-l-split ins-c-conditional-filter"
+    class="pf-v6-l-split ins-c-conditional-filter"
   >
     <div
-      class="pf-v5-l-split__item"
+      class="pf-v6-l-split__item"
     >
       <button
         aria-expanded="false"
         aria-label="Conditional filter toggle"
-        class="pf-v5-c-menu-toggle ins-c-conditional-filter__group"
-        data-ouia-component-id="ConditionalFilterToggle"
+        class="pf-v6-c-menu-toggle ins-c-conditional-filter__group"
+        data-ouia-component-id="OUIA-Generated-MenuToggle-4"
+        data-ouia-component-type="PF6/MenuToggle"
+        data-ouia-safe="true"
         type="button"
       >
         <span
-          class="pf-v5-c-menu-toggle__text"
+          class="pf-v6-c-menu-toggle__icon"
         >
           <span
-            class="pf-v5-c-icon pf-m-md"
+            class="pf-v6-c-icon pf-m-md"
           >
             <span
-              class="pf-v5-c-icon__content"
+              class="pf-v6-c-icon__content"
             >
               <svg
                 aria-hidden="true"
-                class="pf-v5-svg"
+                class="pf-v6-svg"
                 fill="currentColor"
                 height="1em"
                 role="img"
@@ -555,6 +587,10 @@ exports[`ConditionalFilter render should render correctly simple text 1 with val
               </svg>
             </span>
           </span>
+        </span>
+        <span
+          class="pf-v6-c-menu-toggle__text"
+        >
           <span
             class="ins-c-conditional-filter__value-selector"
           >
@@ -562,14 +598,14 @@ exports[`ConditionalFilter render should render correctly simple text 1 with val
           </span>
         </span>
         <span
-          class="pf-v5-c-menu-toggle__controls"
+          class="pf-v6-c-menu-toggle__controls"
         >
           <span
-            class="pf-v5-c-menu-toggle__toggle-icon"
+            class="pf-v6-c-menu-toggle__toggle-icon"
           >
             <svg
               aria-hidden="true"
-              class="pf-v5-svg"
+              class="pf-v6-svg"
               fill="currentColor"
               height="1em"
               role="img"
@@ -585,17 +621,17 @@ exports[`ConditionalFilter render should render correctly simple text 1 with val
       </button>
     </div>
     <div
-      class="pf-v5-l-split__item pf-m-fill"
+      class="pf-v6-l-split__item pf-m-fill"
       data-ouia-component-id="ConditionalFilter"
     >
       <span
-        class="pf-v5-c-form-control pf-m-icon ins-c-conditional-filter"
+        class="pf-v6-c-form-control pf-m-icon ins-c-conditional-filter"
       >
         <input
           aria-invalid="false"
           aria-label="text input"
           data-ouia-component-id="ConditionalFilter"
-          data-ouia-component-type="PF5/TextInput"
+          data-ouia-component-type="PF6/TextInput"
           data-ouia-safe="true"
           placeholder="Filter by simple text 1"
           type="text"
@@ -603,20 +639,20 @@ exports[`ConditionalFilter render should render correctly simple text 1 with val
           widget-type="InsightsInput"
         />
         <span
-          class="pf-v5-c-form-control__utilities"
+          class="pf-v6-c-form-control__utilities"
         >
           <span
-            class="pf-v5-c-form-control__icon"
+            class="pf-v6-c-form-control__icon"
           >
             <span
-              class="pf-v5-c-icon pf-m-md ins-c-search-icon"
+              class="pf-v6-c-icon pf-m-md ins-c-search-icon"
             >
               <span
-                class="pf-v5-c-icon__content"
+                class="pf-v6-c-icon__content"
               >
                 <svg
                   aria-hidden="true"
-                  class="pf-v5-svg"
+                  class="pf-v6-svg"
                   fill="currentColor"
                   height="1em"
                   role="img"
@@ -640,30 +676,32 @@ exports[`ConditionalFilter render should render correctly simple text 1 with val
 exports[`ConditionalFilter render should render correctly simple text 2 with value simple-text-2 1`] = `
 <div>
   <div
-    class="pf-v5-l-split ins-c-conditional-filter"
+    class="pf-v6-l-split ins-c-conditional-filter"
   >
     <div
-      class="pf-v5-l-split__item"
+      class="pf-v6-l-split__item"
     >
       <button
         aria-expanded="false"
         aria-label="Conditional filter toggle"
-        class="pf-v5-c-menu-toggle ins-c-conditional-filter__group"
-        data-ouia-component-id="ConditionalFilterToggle"
+        class="pf-v6-c-menu-toggle ins-c-conditional-filter__group"
+        data-ouia-component-id="OUIA-Generated-MenuToggle-5"
+        data-ouia-component-type="PF6/MenuToggle"
+        data-ouia-safe="true"
         type="button"
       >
         <span
-          class="pf-v5-c-menu-toggle__text"
+          class="pf-v6-c-menu-toggle__icon"
         >
           <span
-            class="pf-v5-c-icon pf-m-md"
+            class="pf-v6-c-icon pf-m-md"
           >
             <span
-              class="pf-v5-c-icon__content"
+              class="pf-v6-c-icon__content"
             >
               <svg
                 aria-hidden="true"
-                class="pf-v5-svg"
+                class="pf-v6-svg"
                 fill="currentColor"
                 height="1em"
                 role="img"
@@ -676,6 +714,10 @@ exports[`ConditionalFilter render should render correctly simple text 2 with val
               </svg>
             </span>
           </span>
+        </span>
+        <span
+          class="pf-v6-c-menu-toggle__text"
+        >
           <span
             class="ins-c-conditional-filter__value-selector"
           >
@@ -683,14 +725,14 @@ exports[`ConditionalFilter render should render correctly simple text 2 with val
           </span>
         </span>
         <span
-          class="pf-v5-c-menu-toggle__controls"
+          class="pf-v6-c-menu-toggle__controls"
         >
           <span
-            class="pf-v5-c-menu-toggle__toggle-icon"
+            class="pf-v6-c-menu-toggle__toggle-icon"
           >
             <svg
               aria-hidden="true"
-              class="pf-v5-svg"
+              class="pf-v6-svg"
               fill="currentColor"
               height="1em"
               role="img"
@@ -706,17 +748,17 @@ exports[`ConditionalFilter render should render correctly simple text 2 with val
       </button>
     </div>
     <div
-      class="pf-v5-l-split__item pf-m-fill"
+      class="pf-v6-l-split__item pf-m-fill"
       data-ouia-component-id="ConditionalFilter"
     >
       <span
-        class="pf-v5-c-form-control pf-m-icon ins-c-conditional-filter"
+        class="pf-v6-c-form-control pf-m-icon ins-c-conditional-filter"
       >
         <input
           aria-invalid="false"
           aria-label="text input"
           data-ouia-component-id="ConditionalFilter"
-          data-ouia-component-type="PF5/TextInput"
+          data-ouia-component-type="PF6/TextInput"
           data-ouia-safe="true"
           placeholder="Filter by simple text 2"
           type="text"
@@ -724,20 +766,20 @@ exports[`ConditionalFilter render should render correctly simple text 2 with val
           widget-type="InsightsInput"
         />
         <span
-          class="pf-v5-c-form-control__utilities"
+          class="pf-v6-c-form-control__utilities"
         >
           <span
-            class="pf-v5-c-form-control__icon"
+            class="pf-v6-c-form-control__icon"
           >
             <span
-              class="pf-v5-c-icon pf-m-md ins-c-search-icon"
+              class="pf-v6-c-icon pf-m-md ins-c-search-icon"
             >
               <span
-                class="pf-v5-c-icon__content"
+                class="pf-v6-c-icon__content"
               >
                 <svg
                   aria-hidden="true"
-                  class="pf-v5-svg"
+                  class="pf-v6-svg"
                   fill="currentColor"
                   height="1em"
                   role="img"
@@ -761,30 +803,32 @@ exports[`ConditionalFilter render should render correctly simple text 2 with val
 exports[`ConditionalFilter render should render correctly with config - each item as disabled 1`] = `
 <div>
   <div
-    class="pf-v5-l-split ins-c-conditional-filter"
+    class="pf-v6-l-split ins-c-conditional-filter"
   >
     <div
-      class="pf-v5-l-split__item"
+      class="pf-v6-l-split__item"
     >
       <button
         aria-expanded="false"
         aria-label="Conditional filter toggle"
-        class="pf-v5-c-menu-toggle ins-c-conditional-filter__group"
-        data-ouia-component-id="ConditionalFilterToggle"
+        class="pf-v6-c-menu-toggle ins-c-conditional-filter__group"
+        data-ouia-component-id="OUIA-Generated-MenuToggle-3"
+        data-ouia-component-type="PF6/MenuToggle"
+        data-ouia-safe="true"
         type="button"
       >
         <span
-          class="pf-v5-c-menu-toggle__text"
+          class="pf-v6-c-menu-toggle__icon"
         >
           <span
-            class="pf-v5-c-icon pf-m-md"
+            class="pf-v6-c-icon pf-m-md"
           >
             <span
-              class="pf-v5-c-icon__content"
+              class="pf-v6-c-icon__content"
             >
               <svg
                 aria-hidden="true"
-                class="pf-v5-svg"
+                class="pf-v6-svg"
                 fill="currentColor"
                 height="1em"
                 role="img"
@@ -797,6 +841,10 @@ exports[`ConditionalFilter render should render correctly with config - each ite
               </svg>
             </span>
           </span>
+        </span>
+        <span
+          class="pf-v6-c-menu-toggle__text"
+        >
           <span
             class="ins-c-conditional-filter__value-selector"
           >
@@ -804,14 +852,14 @@ exports[`ConditionalFilter render should render correctly with config - each ite
           </span>
         </span>
         <span
-          class="pf-v5-c-menu-toggle__controls"
+          class="pf-v6-c-menu-toggle__controls"
         >
           <span
-            class="pf-v5-c-menu-toggle__toggle-icon"
+            class="pf-v6-c-menu-toggle__toggle-icon"
           >
             <svg
               aria-hidden="true"
-              class="pf-v5-svg"
+              class="pf-v6-svg"
               fill="currentColor"
               height="1em"
               role="img"
@@ -827,17 +875,17 @@ exports[`ConditionalFilter render should render correctly with config - each ite
       </button>
     </div>
     <div
-      class="pf-v5-l-split__item pf-m-fill"
+      class="pf-v6-l-split__item pf-m-fill"
       data-ouia-component-id="ConditionalFilter"
     >
       <span
-        class="pf-v5-c-form-control pf-m-disabled pf-m-icon ins-c-conditional-filter"
+        class="pf-v6-c-form-control pf-m-disabled pf-m-icon ins-c-conditional-filter"
       >
         <input
           aria-invalid="false"
           aria-label="text input"
           data-ouia-component-id="ConditionalFilter"
-          data-ouia-component-type="PF5/TextInput"
+          data-ouia-component-type="PF6/TextInput"
           data-ouia-safe="true"
           disabled=""
           placeholder="Filter by simple text 1"
@@ -846,20 +894,20 @@ exports[`ConditionalFilter render should render correctly with config - each ite
           widget-type="InsightsInput"
         />
         <span
-          class="pf-v5-c-form-control__utilities"
+          class="pf-v6-c-form-control__utilities"
         >
           <span
-            class="pf-v5-c-form-control__icon"
+            class="pf-v6-c-form-control__icon"
           >
             <span
-              class="pf-v5-c-icon pf-m-md ins-c-search-icon"
+              class="pf-v6-c-icon pf-m-md ins-c-search-icon"
             >
               <span
-                class="pf-v5-c-icon__content"
+                class="pf-v6-c-icon__content"
               >
                 <svg
                   aria-hidden="true"
-                  class="pf-v5-svg"
+                  class="pf-v6-svg"
                   fill="currentColor"
                   height="1em"
                   role="img"
@@ -883,30 +931,32 @@ exports[`ConditionalFilter render should render correctly with config - each ite
 exports[`ConditionalFilter render should render correctly with config 1`] = `
 <div>
   <div
-    class="pf-v5-l-split ins-c-conditional-filter"
+    class="pf-v6-l-split ins-c-conditional-filter"
   >
     <div
-      class="pf-v5-l-split__item"
+      class="pf-v6-l-split__item"
     >
       <button
         aria-expanded="false"
         aria-label="Conditional filter toggle"
-        class="pf-v5-c-menu-toggle ins-c-conditional-filter__group"
-        data-ouia-component-id="ConditionalFilterToggle"
+        class="pf-v6-c-menu-toggle ins-c-conditional-filter__group"
+        data-ouia-component-id="OUIA-Generated-MenuToggle-2"
+        data-ouia-component-type="PF6/MenuToggle"
+        data-ouia-safe="true"
         type="button"
       >
         <span
-          class="pf-v5-c-menu-toggle__text"
+          class="pf-v6-c-menu-toggle__icon"
         >
           <span
-            class="pf-v5-c-icon pf-m-md"
+            class="pf-v6-c-icon pf-m-md"
           >
             <span
-              class="pf-v5-c-icon__content"
+              class="pf-v6-c-icon__content"
             >
               <svg
                 aria-hidden="true"
-                class="pf-v5-svg"
+                class="pf-v6-svg"
                 fill="currentColor"
                 height="1em"
                 role="img"
@@ -919,6 +969,10 @@ exports[`ConditionalFilter render should render correctly with config 1`] = `
               </svg>
             </span>
           </span>
+        </span>
+        <span
+          class="pf-v6-c-menu-toggle__text"
+        >
           <span
             class="ins-c-conditional-filter__value-selector"
           >
@@ -926,14 +980,14 @@ exports[`ConditionalFilter render should render correctly with config 1`] = `
           </span>
         </span>
         <span
-          class="pf-v5-c-menu-toggle__controls"
+          class="pf-v6-c-menu-toggle__controls"
         >
           <span
-            class="pf-v5-c-menu-toggle__toggle-icon"
+            class="pf-v6-c-menu-toggle__toggle-icon"
           >
             <svg
               aria-hidden="true"
-              class="pf-v5-svg"
+              class="pf-v6-svg"
               fill="currentColor"
               height="1em"
               role="img"
@@ -949,17 +1003,17 @@ exports[`ConditionalFilter render should render correctly with config 1`] = `
       </button>
     </div>
     <div
-      class="pf-v5-l-split__item pf-m-fill"
+      class="pf-v6-l-split__item pf-m-fill"
       data-ouia-component-id="ConditionalFilter"
     >
       <span
-        class="pf-v5-c-form-control pf-m-icon ins-c-conditional-filter"
+        class="pf-v6-c-form-control pf-m-icon ins-c-conditional-filter"
       >
         <input
           aria-invalid="false"
           aria-label="text input"
           data-ouia-component-id="ConditionalFilter"
-          data-ouia-component-type="PF5/TextInput"
+          data-ouia-component-type="PF6/TextInput"
           data-ouia-safe="true"
           placeholder="Filter by simple text 1"
           type="text"
@@ -967,20 +1021,20 @@ exports[`ConditionalFilter render should render correctly with config 1`] = `
           widget-type="InsightsInput"
         />
         <span
-          class="pf-v5-c-form-control__utilities"
+          class="pf-v6-c-form-control__utilities"
         >
           <span
-            class="pf-v5-c-form-control__icon"
+            class="pf-v6-c-form-control__icon"
           >
             <span
-              class="pf-v5-c-icon pf-m-md ins-c-search-icon"
+              class="pf-v6-c-icon pf-m-md ins-c-search-icon"
             >
               <span
-                class="pf-v5-c-icon__content"
+                class="pf-v6-c-icon__content"
               >
                 <svg
                   aria-hidden="true"
-                  class="pf-v5-svg"
+                  class="pf-v6-svg"
                   fill="currentColor"
                   height="1em"
                   role="img"
@@ -1004,20 +1058,20 @@ exports[`ConditionalFilter render should render correctly with config 1`] = `
 exports[`ConditionalFilter render should render correctly with one filter 1`] = `
 <div>
   <div
-    class="pf-v5-l-split ins-c-conditional-filter"
+    class="pf-v6-l-split ins-c-conditional-filter"
   >
     <div
-      class="pf-v5-l-split__item pf-m-fill"
+      class="pf-v6-l-split__item pf-m-fill"
       data-ouia-component-id="ConditionalFilter"
     >
       <span
-        class="pf-v5-c-form-control pf-m-icon ins-c-conditional-filter"
+        class="pf-v6-c-form-control pf-m-icon ins-c-conditional-filter"
       >
         <input
           aria-invalid="false"
           aria-label="text input"
           data-ouia-component-id="ConditionalFilter"
-          data-ouia-component-type="PF5/TextInput"
+          data-ouia-component-type="PF6/TextInput"
           data-ouia-safe="true"
           placeholder="Filter by simple text 1"
           type="text"
@@ -1025,20 +1079,20 @@ exports[`ConditionalFilter render should render correctly with one filter 1`] = 
           widget-type="InsightsInput"
         />
         <span
-          class="pf-v5-c-form-control__utilities"
+          class="pf-v6-c-form-control__utilities"
         >
           <span
-            class="pf-v5-c-form-control__icon"
+            class="pf-v6-c-form-control__icon"
           >
             <span
-              class="pf-v5-c-icon pf-m-md ins-c-search-icon"
+              class="pf-v6-c-icon pf-m-md ins-c-search-icon"
             >
               <span
-                class="pf-v5-c-icon__content"
+                class="pf-v6-c-icon__content"
               >
                 <svg
                   aria-hidden="true"
-                  class="pf-v5-svg"
+                  class="pf-v6-svg"
                   fill="currentColor"
                   height="1em"
                   role="img"
@@ -1062,30 +1116,32 @@ exports[`ConditionalFilter render should render correctly with one filter 1`] = 
 exports[`ConditionalFilter render should render correctly with with the active label hidden 1`] = `
 <div>
   <div
-    class="pf-v5-l-split ins-c-conditional-filter"
+    class="pf-v6-l-split ins-c-conditional-filter"
   >
     <div
-      class="pf-v5-l-split__item"
+      class="pf-v6-l-split__item"
     >
       <button
         aria-expanded="false"
         aria-label="Conditional filter toggle"
-        class="pf-v5-c-menu-toggle ins-c-conditional-filter__group ins-c-conditional-filter__no-label"
-        data-ouia-component-id="ConditionalFilterToggle"
+        class="pf-v6-c-menu-toggle ins-c-conditional-filter__group ins-c-conditional-filter__no-label"
+        data-ouia-component-id="OUIA-Generated-MenuToggle-11"
+        data-ouia-component-type="PF6/MenuToggle"
+        data-ouia-safe="true"
         type="button"
       >
         <span
-          class="pf-v5-c-menu-toggle__text"
+          class="pf-v6-c-menu-toggle__icon"
         >
           <span
-            class="pf-v5-c-icon pf-m-md"
+            class="pf-v6-c-icon pf-m-md"
           >
             <span
-              class="pf-v5-c-icon__content"
+              class="pf-v6-c-icon__content"
             >
               <svg
                 aria-hidden="true"
-                class="pf-v5-svg"
+                class="pf-v6-svg"
                 fill="currentColor"
                 height="1em"
                 role="img"
@@ -1100,14 +1156,14 @@ exports[`ConditionalFilter render should render correctly with with the active l
           </span>
         </span>
         <span
-          class="pf-v5-c-menu-toggle__controls"
+          class="pf-v6-c-menu-toggle__controls"
         >
           <span
-            class="pf-v5-c-menu-toggle__toggle-icon"
+            class="pf-v6-c-menu-toggle__toggle-icon"
           >
             <svg
               aria-hidden="true"
-              class="pf-v5-svg"
+              class="pf-v6-svg"
               fill="currentColor"
               height="1em"
               role="img"
@@ -1123,17 +1179,17 @@ exports[`ConditionalFilter render should render correctly with with the active l
       </button>
     </div>
     <div
-      class="pf-v5-l-split__item pf-m-fill"
+      class="pf-v6-l-split__item pf-m-fill"
       data-ouia-component-id="ConditionalFilter"
     >
       <span
-        class="pf-v5-c-form-control pf-m-icon ins-c-conditional-filter"
+        class="pf-v6-c-form-control pf-m-icon ins-c-conditional-filter"
       >
         <input
           aria-invalid="false"
           aria-label="text input"
           data-ouia-component-id="ConditionalFilter"
-          data-ouia-component-type="PF5/TextInput"
+          data-ouia-component-type="PF6/TextInput"
           data-ouia-safe="true"
           placeholder="Filter by simple text 1"
           type="text"
@@ -1141,20 +1197,20 @@ exports[`ConditionalFilter render should render correctly with with the active l
           widget-type="InsightsInput"
         />
         <span
-          class="pf-v5-c-form-control__utilities"
+          class="pf-v6-c-form-control__utilities"
         >
           <span
-            class="pf-v5-c-form-control__icon"
+            class="pf-v6-c-form-control__icon"
           >
             <span
-              class="pf-v5-c-icon pf-m-md ins-c-search-icon"
+              class="pf-v6-c-icon pf-m-md ins-c-search-icon"
             >
               <span
-                class="pf-v5-c-icon__content"
+                class="pf-v6-c-icon__content"
               >
                 <svg
                   aria-hidden="true"
-                  class="pf-v5-svg"
+                  class="pf-v6-svg"
                   fill="currentColor"
                   height="1em"
                   role="img"

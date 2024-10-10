@@ -23,7 +23,7 @@ exports[`constructGroups should build filter with empty badge 1`] = `
     }
   >
     <span
-      className="pf-v5-c-badge pf-m-read"
+      className="pf-v6-c-badge pf-m-read"
     >
       0
     </span>
@@ -54,7 +54,7 @@ exports[`constructGroups should render correctly 1`] = `
     }
   >
     <span
-      className="pf-v5-c-badge pf-m-unread"
+      className="pf-v6-c-badge pf-m-unread"
     >
       1
     </span>

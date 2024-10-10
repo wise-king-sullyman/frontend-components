@@ -5,13 +5,16 @@ import t_global_breakpoint_lg from "@patternfly/react-tokens/dist/js/t_global_br
 import t_global_breakpoint_xl from "@patternfly/react-tokens/dist/js/t_global_breakpoint_xl";
 import t_global_breakpoint_2xl from "@patternfly/react-tokens/dist/js/t_global_breakpoint_2xl";
 
+function getPxValue(token: { value: string }) {
+  return parseInt(token.value.replace('px', '')) * 16;
+}
 const breakPoints = {
-  xs: parseInt(t_global_breakpoint_xs.value.replace('px', '')),
-  sm: parseInt(t_global_breakpoint_sm.value.replace('px', '')),
-  md: parseInt(t_global_breakpoint_md.value.replace('px', '')),
-  lg: parseInt(t_global_breakpoint_lg.value.replace('px', '')),
-  xl: parseInt(t_global_breakpoint_xl.value.replace('px', '')),
-  '2xl': parseInt(t_global_breakpoint_2xl.value.replace('px', '')),
+  xs: getPxValue(t_global_breakpoint_xs),
+  sm: getPxValue(t_global_breakpoint_sm),
+  md: getPxValue(t_global_breakpoint_md),
+  lg: getPxValue(t_global_breakpoint_lg),
+  xl: getPxValue(t_global_breakpoint_xl),
+  '2xl': getPxValue(t_global_breakpoint_2xl),
 };
 
 export default breakPoints;

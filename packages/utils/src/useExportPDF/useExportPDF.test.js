@@ -1,8 +1,8 @@
 import useExportPDF from './useExportPDF';
-import { addNotification } from '@redhat-cloud-services/frontend-components-notifications/redux';
+import { addNotification } from '@ausuliv/frontend-components-notifications/redux';
 import { pdfGeneratorURL } from './useExportPDF';
-jest.mock('@redhat-cloud-services/frontend-components-notifications/redux', () => ({
-  ...jest.requireActual('@redhat-cloud-services/frontend-components-notifications/redux'),
+jest.mock('@ausuliv/frontend-components-notifications/redux', () => ({
+  ...jest.requireActual('@ausuliv/frontend-components-notifications/redux'),
   addNotification: jest.fn(() => ({})),
 }));
 

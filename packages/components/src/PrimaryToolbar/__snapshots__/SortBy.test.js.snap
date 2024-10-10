@@ -2,26 +2,28 @@
 
 exports[`PrimaryToolbar should render desc direction 1`] = `
 <Button
+  icon={
+    <Icon
+      size="md"
+    >
+      <SortAmountDownIcon />
+    </Icon>
+  }
   onClick={[Function]}
   variant="plain"
->
-  <Icon
-    size="md"
-  >
-    <SortAmountDownIcon />
-  </Icon>
-</Button>
+/>
 `;
 
 exports[`PrimaryToolbar should render no data 1`] = `
 <Button
+  icon={
+    <Icon
+      size="md"
+    >
+      <SortAmountUpIcon />
+    </Icon>
+  }
   onClick={[Function]}
   variant="plain"
->
-  <Icon
-    size="md"
-  >
-    <SortAmountUpIcon />
-  </Icon>
-</Button>
+/>
 `;
