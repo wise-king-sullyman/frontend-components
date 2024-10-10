@@ -4,25 +4,17 @@ import ReactDOM from 'react-dom';
 import { CircleIconConfig } from '@patternfly/react-icons/dist/js/icons/circle-icon';
 import PropTypes from 'prop-types';
 import { Canvas, Text, View } from '@react-pdf/renderer';
-import {
-	ChartBar
-} from '@patternfly/react-charts/dist/js/victory/components/ChartBar/ChartBar';
-import {
-	ChartPie
-} from '@patternfly/react-charts/dist/js/victory/components/ChartBar/ChartBar';
-import {
-	ChartDonut
-} from '@patternfly/react-charts/dist/js/victory/components/ChartBar/ChartBar';
-import {
-	ChartDonutUtilization
-} from '@patternfly/react-charts/dist/js/victory/components/ChartBar/ChartBar';
+import { ChartBar } from '@patternfly/react-charts/dist/js/victory/components/ChartBar';
+import { ChartPie } from '@patternfly/react-charts/dist/js/victory/components/ChartPie';
+import { ChartDonut } from '@patternfly/react-charts/dist/js/victory/components/ChartDonut';
+import { ChartDonutUtilization } from '@patternfly/react-charts/dist/js/victory/components/ChartDonutUtilization';
 import { getLightThemeColors } from '../utils/theme/utils';
 import Table from './Table';
 import styles from '../utils/styles';
 import rgbHex from 'rgb-hex';
 import flatten from 'lodash/flatten';
-import t_color_gray_30 from "@patternfly/react-tokens/dist/js/t_color_gray_30";
-import t_color_gray_70 from "@patternfly/react-tokens/dist/js/t_color_gray_70";
+import t_color_gray_30 from '@patternfly/react-tokens/dist/js/t_color_gray_30';
+import t_color_gray_70 from '@patternfly/react-tokens/dist/js/t_color_gray_70';
 
 const appliedStyles = styles();
 const chartMapper = {
