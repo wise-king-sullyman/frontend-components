@@ -2,23 +2,22 @@
 import { Font, StyleSheet } from '@react-pdf/renderer';
 import c_table_m_compact_cell_PaddingBlockStart from '@patternfly/react-tokens/dist/js/c_table_m_compact_cell_PaddingBlockStart';
 import c_table_m_compact_cell_PaddingBlockEnd from '@patternfly/react-tokens/dist/js/c_table_m_compact_cell_PaddingBlockEnd';
-import chart_global_Fill_Color_700 from '@patternfly/react-tokens/dist/js/chart_global_Fill_Color_700';
-import chart_global_warning_Color_200 from '@patternfly/react-tokens/dist/js/chart_global_warning_Color_200';
-import chart_global_warning_Color_100 from '@patternfly/react-tokens/dist/js/chart_global_warning_Color_100';
-import global_color_brand_default from '@patternfly/react-tokens/dist/js/global_text_color_regular';
-import global_text_color_brand_default from '@patternfly/react-tokens/dist/js/global_text_color_brand_default';
-import global_text_color_regular from '@patternfly/react-tokens/dist/js/global_text_color_regular';
+import chart_global_Fill_Color_700 from '@patternfly/react-tokens/dist/js/t_chart_global_fill_color_700';
+import chart_global_warning_Color_200 from '@patternfly/react-tokens/dist/js/t_chart_global_warning_color_200';
+import chart_global_warning_Color_100 from '@patternfly/react-tokens/dist/js/t_chart_global_warning_Color_100';
+import t_global_text_color_regular from '@patternfly/react-tokens/dist/js/t_global_text_color_regular';
+import t_global_text_color_brand_default from '@patternfly/react-tokens/dist/js/t_global_text_color_brand_default';
 import chart_color_red_100 from '@patternfly/react-tokens/dist/js/chart_color_red_100';
 import chart_color_red_200 from '@patternfly/react-tokens/dist/js/chart_color_red_200';
 import chart_color_red_300 from '@patternfly/react-tokens/dist/js/chart_color_red_300';
-import global_icon_color_status_info_default from '@patternfly/react-tokens/dist/js/global_icon_color_status_info_default';
-import global_color_status_info_default from '@patternfly/react-tokens/dist/js/global_color_status_info_default';
-import global_text_color_status_info_default from '@patternfly/react-tokens/dist/js/global_text_color_status_info_default';
-import global_color_status_warning_default from '@patternfly/react-tokens/dist/js/global_color_status_warning_default';
-import global_text_color_status_warning_default from '@patternfly/react-tokens/dist/js/global_text_color_status_warning_default';
-import global_icon_color_status_warning_default from '@patternfly/react-tokens/dist/js/global_icon_color_status_warning_default';
-import color_orange_60 from '@patternfly/react-tokens/dist/js/color_orange_60';
-import global_color_status_danger_default from '@patternfly/react-tokens/dist/js/global_color_status_danger_default';
+import t_global_icon_color_status_info_default from '@patternfly/react-tokens/dist/js/t_global_icon_color_status_info_default';
+import t_global_color_status_info_default from '@patternfly/react-tokens/dist/js/t_global_color_status_info_default';
+import t_global_text_color_status_info_default from '@patternfly/react-tokens/dist/js/t_global_text_color_status_info_default';
+import t_global_color_status_warning_default from '@patternfly/react-tokens/dist/js/t_global_color_status_warning_default';
+import t_global_text_color_status_warning_default from '@patternfly/react-tokens/dist/js/t_global_text_color_status_warning_default';
+import t_global_icon_color_status_warning_default from '@patternfly/react-tokens/dist/js/t_global_icon_color_status_warning_default';
+import t_color_orange_60 from '@patternfly/react-tokens/dist/js/t_color_orange_60';
+import t_global_color_status_danger_default from '@patternfly/react-tokens/dist/js/t_global_color_status_danger_default';
 
 import { fontTypes, generateFonts, redhatFont } from './fonts';
 
@@ -72,7 +71,7 @@ export default (style = {}) =>
     },
     text: {
       fontSize: 9,
-      color: global_text_color_regular.value,
+      color: t_global_text_color_regular.value,
     },
     firstTitle: {
       fontSize: 9,
@@ -86,7 +85,7 @@ export default (style = {}) =>
     },
     thirdTitle: {
       fontSize: 9,
-      color: global_text_color_brand_default.value,
+      color: t_global_text_color_brand_default.value,
     },
     flexRow: {
       display: 'flex',
@@ -111,25 +110,25 @@ export default (style = {}) =>
       color: chart_global_warning_Color_200.value,
     },
     defaultColor: {
-      color: global_color_brand_default.value,
+      color: t_global_text_color_regular.value,
     },
     labelColorsLow: {
-      bgColor: global_color_status_info_default.value,
-      textColor: global_text_color_status_info_default.value,
-      iconColor: global_icon_color_status_info_default.value,
+      bgColor: t_global_color_status_info_default.value,
+      textColor: t_global_text_color_status_info_default.value,
+      iconColor: t_global_icon_color_status_info_default.value,
     },
     labelColorsModerate: {
-      bgColor: global_color_status_warning_default.value,
-      textColor: global_text_color_status_warning_default.value,
-      iconColor: global_icon_color_status_warning_default.value,
+      bgColor: t_global_color_status_warning_default.value,
+      textColor: t_global_text_color_status_warning_default.value,
+      iconColor: t_global_icon_color_status_warning_default.value,
     },
     labelColorsImportant: {
       bgColor: '#fff5ec',
-      textColor: color_orange_60.value,
+      textColor: t_color_orange_60.value,
       iconColor: chart_global_warning_Color_100.value,
     },
     labelColorsCrit: {
-      bgColor: global_color_status_danger_default.value,
+      bgColor: t_global_color_status_danger_default.value,
       textColor: chart_color_red_300.value,
       iconColor: chart_color_red_200.value,
     },

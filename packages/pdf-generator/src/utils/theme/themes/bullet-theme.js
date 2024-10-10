@@ -22,7 +22,7 @@ import chart_color_red_200 from '@patternfly/react-tokens/dist/js/chart_color_re
 import chart_color_red_300 from '@patternfly/react-tokens/dist/js/chart_color_red_300';
 import chart_color_red_400 from '@patternfly/react-tokens/dist/js/chart_color_red_400';
 import chart_color_red_500 from '@patternfly/react-tokens/dist/js/chart_color_red_500';
-import chart_global_layout_Padding from '@patternfly/react-tokens/dist/js/chart_global_layout_Padding';
+import chart_global_layout_Padding from '@patternfly/react-tokens/dist/js/t_chart_global_layout_padding';
 
 // See https://docs.google.com/document/d/1cw10pJFXWruB1SA8TQwituxn5Ss6KpxYPCOYGrH8qAY/edit#
 // See https://www.patternfly.org/v3/pattern-library/data-visualization/bullet-chart/#design

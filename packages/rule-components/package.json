@@ -30,9 +30,9 @@
   },
   "homepage": "https://github.com/RedHatInsights/frontend-components/tree/master/packages/rule-componenets#readme",
   "dependencies": {
-    "@patternfly/react-core": "6.0.0-alpha.100",
-    "@patternfly/react-icons": "6.0.0-alpha.35",
-    "@patternfly/react-table": "6.0.0-alpha.101",
+    "@patternfly/react-core": "6.0.0-prerelease.21",
+    "@patternfly/react-icons": "6.0.0-prerelease.7",
+    "@patternfly/react-table": "6.0.0-prerelease.22",
     "@ausuliv/frontend-components": "^4.2.9",
     "@ausuliv/frontend-components-utilities": "^4.0.10",
     "dot": "1.1.3",

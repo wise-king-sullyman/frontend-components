@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ConditionalFilter from '@ausuliv/frontend-components/ConditionalFilter';
-import { Content, TextListItemVariants, TextListVariants } from '@patternfly/react-core';
+import { Content, ContentVariants,  } from '@patternfly/react-core';
 
 const groups = [
   {
@@ -99,33 +99,33 @@ const CFExample = () => {
   return (
     <div>
       <Content>
-        <Content component={TextListVariants.dl}>
-          <Content component={TextListItemVariants.dt}>Selected groups</Content>
-          <Content component={TextListItemVariants.dd}>
+        <Content component={ContentVariants.dl}>
+          <Content component={ContentVariants.dt}>Selected groups</Content>
+          <Content component={ContentVariants.dd}>
             <code>{JSON.stringify(groupsSelected || {}, null, 2)}</code>
           </Content>
         </Content>
-        <Content component={TextListVariants.dl}>
-          <Content component={TextListItemVariants.dt}>Selected TreeView</Content>
-          <Content component={TextListItemVariants.dd}>
+        <Content component={ContentVariants.dl}>
+          <Content component={ContentVariants.dt}>Selected TreeView</Content>
+          <Content component={ContentVariants.dd}>
             <code>{JSON.stringify(treeViewSelected || {}, null, 2)}</code>
           </Content>
         </Content>
-        <Content component={TextListVariants.dl}>
-          <Content component={TextListItemVariants.dt}>Selected checkbox</Content>
-          <Content component={TextListItemVariants.dd}>
+        <Content component={ContentVariants.dl}>
+          <Content component={ContentVariants.dt}>Selected checkbox</Content>
+          <Content component={ContentVariants.dd}>
             <code>{JSON.stringify(checkboxSelected || {}, null, 2)}</code>
           </Content>
         </Content>
-        <Content component={TextListVariants.dl}>
-          <Content component={TextListItemVariants.dt}>Selected radio</Content>
-          <Content component={TextListItemVariants.dd}>
+        <Content component={ContentVariants.dl}>
+          <Content component={ContentVariants.dt}>Selected radio</Content>
+          <Content component={ContentVariants.dd}>
             <code>{JSON.stringify(radioSelected || [], null, 2)}</code>
           </Content>
         </Content>
-        <Content component={TextListVariants.dl}>
-          <Content component={TextListItemVariants.dt}>Text filter</Content>
-          <Content component={TextListItemVariants.dd}>
+        <Content component={ContentVariants.dl}>
+          <Content component={ContentVariants.dt}>Text filter</Content>
+          <Content component={ContentVariants.dd}>
             <code>{textValue}</code>
           </Content>
         </Content>

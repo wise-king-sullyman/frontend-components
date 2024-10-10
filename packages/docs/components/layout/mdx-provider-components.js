@@ -5,8 +5,6 @@ import {
   Card,
   CardBody,
   Content,
-  TextListItemVariants,
-  TextListVariants,
   ContentVariants,
   Title,
 } from '@patternfly/react-core';
@@ -99,17 +97,17 @@ const Code = ({ children, className }) =>
     <code>{children}</code>
   );
 
-const Li = ({ children }) => <Content component={TextListItemVariants.li}>{children}</Content>;
+const Li = ({ children }) => <Content component={ContentVariants.li}>{children}</Content>;
 
 const OrderedList = ({ children }) => (
   <Content>
-    <Content component={TextListVariants.ol}>{children}</Content>
+    <Content component={ContentVariants.ol}>{children}</Content>
   </Content>
 );
 
 export const UnorderedList = ({ children }) => (
   <Content>
-    <Content component={TextListVariants.ul}>{children}</Content>
+    <Content component={ContentVariants.ul}>{children}</Content>
   </Content>
 );
 
