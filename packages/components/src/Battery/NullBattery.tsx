@@ -1,5 +1,5 @@
 import React from 'react';
-import Battery from '@patternfly/react-component-groups/dist/dynamic/Battery';
+import Battery from '@patternfly/react-component-groups/dist/dynamic/Severity';
 
 /**
  * @deprecated Do not use deprecated NullBattery import, the component has been moved to @patternfly/react-component-groups

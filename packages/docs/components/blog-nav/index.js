@@ -44,7 +44,7 @@ const BlogNav = () => {
   const classes = useStyles();
   return (
     <div className={classes.blogContainer}>
-      <div className="pf-v5-c-menu">
+      <div className="pf-v6-c-menu">
         <MenuContent>
           <MenuList iconSize="large">
             <MenuItem>
@@ -55,7 +55,7 @@ const BlogNav = () => {
               key={href}
               component={({ props, children }) => (
                 <Link href={href}>
-                  <button className="pf-v5-c-menu__item">
+                  <button className="pf-v6-c-menu__item">
                     <a {...props} className={classNames(props?.className, classes.blogLink)} href={href}>
                       {children}
                     </a>

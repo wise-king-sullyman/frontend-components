@@ -1,6 +1,6 @@
 import React, { FormEvent, Fragment, ReactNode, useEffect, useRef, useState } from 'react';
 import classNames from 'classnames';
-import globalBreakpointMd from '@patternfly/react-tokens/dist/js/global_breakpoint_md';
+import t_global_breakpoint_md from '@patternfly/react-tokens/dist/js/t_global_breakpoint_md';
 import {
   Dropdown,
   DropdownItem,
@@ -91,7 +91,7 @@ const ConditionalFilter: React.FunctionComponent<ConditionalFilterProps> = ({
   value = '',
   innerRef,
 }) => {
-  const breakpointConstant = parseInt(globalBreakpointMd.value.replace('px', ''));
+  const breakpointConstant = parseInt(t_global_breakpoint_md.value.replace('px', ''));
   const updateFilterViewport = (width: number) => width <= breakpointConstant;
   const [isOpen, setIsOpen] = useState(false);
   const [stateValue, setStateValue] = useState<number | string>();
@@ -206,10 +206,12 @@ const ConditionalFilter: React.FunctionComponent<ConditionalFilterProps> = ({
                         onClick={() => setIsOpen((prev) => !prev)}
                         isExpanded={isOpen}
                         data-ouia-component-id="ConditionalFilterToggle"
+                        icon={
+                          <Icon size="md">
+                            <FilterIcon />
+                          </Icon>
+                        }
                       >
-                        <Icon size="md">
-                          <FilterIcon />
-                        </Icon>
                         {!hideLabel && (
                           <span className="ins-c-conditional-filter__value-selector">{activeItem && capitalize(String(activeItem.label))}</span>
                         )}

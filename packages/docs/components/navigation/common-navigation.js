@@ -17,7 +17,7 @@ const NavLink = ({ href, title }) => {
       component={(props) => (
         <Link {...props}>
           <a
-            className={classnames('pf-v5-c-nav__link', {
+            className={classnames('pf-v6-c-nav__link', {
               'pf-m-current': props.href === pathname,
             })}
           >

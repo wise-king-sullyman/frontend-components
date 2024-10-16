@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid, GridItem, Stack, StackItem, Text, Title } from '@patternfly/react-core';
+import { Grid, GridItem, Stack, StackItem, Content, Title } from '@patternfly/react-core';
 import RuleFeedback, { feedback } from './RuleFeedback';
 import Markdown from '../Markdown';
 import { totalRiskMeta } from './constants';
@@ -30,7 +30,7 @@ const ReportDetails = ({
               <StackItem>{title}</StackItem>
               {createdAt && (
                 <StackItem>
-                  <Text>Published date: {createdAt}</Text>
+                  <Content component="p">Published date: {createdAt}</Content>
                 </StackItem>
               )}
             </Stack>

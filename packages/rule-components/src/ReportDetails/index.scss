@@ -76,9 +76,9 @@
 
   p + pre, ul + pre { @include rem('margin-bottom', 20px); }
 
-  .pf-v5-c-list { @include rem('margin', 5px 0); }
+  .pf-v6-c-list { @include rem('margin', 5px 0); }
 
-  .pf-v5-c-button.pf-m-link {
+  .pf-v6-c-button.pf-m-link {
     padding-left: 0;
   }
 
@@ -92,7 +92,7 @@
 
   p + pre, ul + pre { @include rem('margin-bottom', 20px); }
 
-  .pf-v5-c-list { @include rem('margin', 5px 0); }
+  .pf-v6-c-list { @include rem('margin', 5px 0); }
 
   .ins-c-rule__modal-content {
     margin-top: 24px;

@@ -16,14 +16,14 @@ const useStyles = createUseStyles({
     background: 'none !important',
   },
   listItem: {
-    color: 'var(--pf-v5-global--palette--black-700)',
+    color: "var(--pf-t--temp--dev--tbd)"/* CODEMODS: original v5 color was --pf-v5-global--palette--black-700 */,
     '&:hover': {
-      color: 'var(--pf-v5-global--palette--black-900)',
+      color: "var(--pf-t--temp--dev--tbd)"/* CODEMODS: original v5 color was --pf-v5-global--palette--black-900 */,
     },
   },
   activeLink: {
-    color: 'var(--pf-v5-global--palette--black-900) !important',
-    background: 'var(--pf-v5-global--palette--white) !important',
+    color: "var(--pf-t--temp--dev--tbd)"/* CODEMODS: original v5 color was --pf-v5-global--palette--black-900 */,
+    background: "var(--pf-t--temp--dev--tbd)"/* CODEMODS: original v5 color was --pf-v5-global--palette--white */,
     position: 'relative',
     '&::before': {
       content: '""',
@@ -31,7 +31,7 @@ const useStyles = createUseStyles({
       left: -8,
       top: 0,
       bottom: 0,
-      borderLeft: '10px solid var(--pf-v5-global--palette--blue-400)',
+      borderLeft: "var(--pf-t--temp--dev--tbd)"/* CODEMODS: original v5 color was --pf-v5-global--palette--blue-400 */,
     },
   },
 });
@@ -94,7 +94,7 @@ const TableOfContents = () => {
   useEffect(() => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     isMounted = true;
-    document.querySelector('.pf-v5-c-page__main').addEventListener('scroll', () => scrollListener(setActive));
+    document.querySelector('.pf-v6-c-page__main').addEventListener('scroll', () => scrollListener(setActive));
     scrollListener(setActive);
 
     return () => {

@@ -2,18 +2,18 @@
 
 exports[`InsightsLabel component should render defaults 1`] = `
 <span
-  className="pf-v5-c-label pf-m-blue"
+  className="pf-v6-c-label pf-m-blue pf-m-filled"
 >
   <span
-    className="pf-v5-c-label__content"
+    className="pf-v6-c-label__content"
   >
     <span
-      className="pf-v5-c-label__icon"
+      className="pf-v6-c-label__icon"
     >
       <AngleDoubleDownIcon />
     </span>
     <span
-      className="pf-v5-c-label__text"
+      className="pf-v6-c-label__text"
     >
       Low
     </span>
@@ -23,18 +23,18 @@ exports[`InsightsLabel component should render defaults 1`] = `
 
 exports[`InsightsLabel component should render with icon 1`] = `
 <span
-  className="pf-v5-c-label pf-m-blue"
+  className="pf-v6-c-label pf-m-blue pf-m-filled"
 >
   <span
-    className="pf-v5-c-label__content"
+    className="pf-v6-c-label__content"
   >
     <span
-      className="pf-v5-c-label__icon"
+      className="pf-v6-c-label__icon"
     >
       <AngleDoubleDownIcon />
     </span>
     <span
-      className="pf-v5-c-label__text"
+      className="pf-v6-c-label__text"
     >
       Low
     </span>
@@ -44,13 +44,13 @@ exports[`InsightsLabel component should render with icon 1`] = `
 
 exports[`InsightsLabel component should render without icon 1`] = `
 <span
-  className="pf-v5-c-label pf-m-blue"
+  className="pf-v6-c-label pf-m-blue pf-m-filled"
 >
   <span
-    className="pf-v5-c-label__content"
+    className="pf-v6-c-label__content"
   >
     <span
-      className="pf-v5-c-label__text"
+      className="pf-v6-c-label__text"
     >
       Low
     </span>

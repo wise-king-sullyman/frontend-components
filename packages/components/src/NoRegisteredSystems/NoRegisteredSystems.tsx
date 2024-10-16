@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, EmptyState, EmptyStateBody, EmptyStateFooter, EmptyStateHeader, EmptyStateIcon } from '@patternfly/react-core';
+import { Button, EmptyState, EmptyStateBody, EmptyStateFooter,  } from '@patternfly/react-core';
 import { DisconnectedIcon } from '@patternfly/react-icons';
 
 export interface NoRegisteredSystemsProps {
@@ -13,8 +13,7 @@ const NoRegisteredSystems: React.FC<NoRegisteredSystemsProps> = ({
   bodyText = 'Connect your systems to keep your Red Hat environment running efficiently, with security and compliance with various standards.',
   buttonText = 'Learn more about connecting your systems',
 }) => (
-  <EmptyState>
-    <EmptyStateHeader titleText={titleText} icon={<EmptyStateIcon icon={DisconnectedIcon} />} headingLevel="h5" />
+  <EmptyState  headingLevel="h5" icon={DisconnectedIcon}  titleText={titleText}>
     <EmptyStateBody>{bodyText}</EmptyStateBody>
     <EmptyStateFooter>
       <Button
@@ -23,7 +22,7 @@ const NoRegisteredSystems: React.FC<NoRegisteredSystemsProps> = ({
         href="https://access.redhat.com/products/red-hat-insights#getstarted"
         target="_blank"
         rel="noopener noreferrer"
-        className="pf-v5-u-mt-lg"
+        className="pf-v6-u-mt-lg"
       >
         {buttonText}
       </Button>

@@ -3,7 +3,7 @@ const path = require('path');
 const glob = require('glob');
 
 const mapper = {
-    TextVariants: 'Text',
+    ContentVariants: 'Content',
     ButtonVariant: 'Button',
     PaginationVariant: 'Pagination',
     SelectVariant: 'selectConstants',

@@ -2,7 +2,7 @@ import './RuleDetails.scss';
 
 import React from 'react';
 
-import { Flex, FlexItem, Icon, Stack, StackItem, Text, TextContent, TextVariants } from '@patternfly/react-core';
+import { Flex, FlexItem, Icon, Stack, StackItem, Content, ContentVariants } from '@patternfly/react-core';
 import { ExternalLinkAltIcon } from '@patternfly/react-icons';
 
 import InsightsLabel from '@redhat-cloud-services/frontend-components/InsightsLabel';
@@ -111,9 +111,9 @@ const RuleDetails: React.FC<RuleDetailsProps> = ({
                 <FlexItem>
                   <Stack hasGutter>
                     <StackItem className="ins-c-rule-details__total-risk-body">
-                      <TextContent>
-                        <Text component={TextVariants.p}>{messages.rulesDetailsTotalRiskBody}</Text>
-                      </TextContent>
+                      <Content>
+                        <Content component={ContentVariants.p}>{messages.rulesDetailsTotalRiskBody}</Content>
+                      </Content>
                     </StackItem>
                     <Stack>
                       <StackItem>
@@ -143,7 +143,7 @@ const RuleDetails: React.FC<RuleDetailsProps> = ({
                 <FlexItem spacer={{ default: 'spacerSm' }}>
                   <strong>{messages.riskOfChange}</strong>
                 </FlexItem>
-                <FlexItem className={`pf-v5-u-display-inline-flex alignCenterOverride pf-v5-u-pb-sm pf-v5-u-pt-sm`}>
+                <FlexItem className={`pf-v6-u-display-inline-flex alignCenterOverride pf-v6-u-pb-sm pf-v6-u-pt-sm`}>
                   <Flex flexWrap={{ default: 'nowrap' }}>
                     <FlexItem>
                       {/* remove pf-m-compact class name once https://github.com/patternfly/patternfly-react/issues/7196 is resolved */}
@@ -158,9 +158,9 @@ const RuleDetails: React.FC<RuleDetailsProps> = ({
                     <FlexItem className="ins-c-rule-details__risk-of-ch-desc">
                       <Stack hasGutter>
                         <StackItem>
-                          <TextContent>
-                            <Text component={TextVariants.p}>{resolutionRiskDesc}</Text>
-                          </TextContent>
+                          <Content>
+                            <Content component={ContentVariants.p}>{resolutionRiskDesc}</Content>
+                          </Content>
                         </StackItem>
                         {product === AdvisorProduct.rhel && (
                           <StackItem className="ins-c-rule-details__reboot">

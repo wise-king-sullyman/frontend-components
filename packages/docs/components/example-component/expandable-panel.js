@@ -13,8 +13,8 @@ import CodesandboxIcon from './codesandbox-svg-icons';
 const useToastStyles = createUseStyles({
   toast: {
     position: 'fixed !important',
-    bottom: 'var(--pf-v5-global--spacer--md)',
-    right: 'var(--pf-v5-global--spacer--md)',
+    bottom: "var(--pf-t--global--spacer--md)",
+    right: "var(--pf-t--global--spacer--md)",
     cursor: 'pointer',
   },
 });
@@ -83,42 +83,34 @@ const ExpandablePanel = ({ codeOnly, language, sourceCode, source }) => {
   return (
     <Fragment>
       {toast && <TimedToas {...toast} handleClose={handleClose} />}
-      <Toolbar className={classnames('pf-v5-u-p-0 pf-v5-u-mb-md', classes.toolbar)}>
-        <ToolbarContent className="pf-v5-u-p-0">
+      <Toolbar className={classnames('pf-v6-u-p-0 pf-v6-u-mb-md', classes.toolbar)}>
+        <ToolbarContent className="pf-v6-u-p-0">
           <ToolbarItem className={classes.firstItem}>
             {!codeOnly && (
               <Tooltip content={<p>Open code example</p>}>
-                <Button variant="plain" onClick={() => setIsOpen((prev) => !prev)}>
-                  <CodeIcon
+                <Button icon={<CodeIcon
                     className={classnames(classes.iconExpand, {
                       [classes.inconExpandExpanded]: isOpen,
                     })}
-                  />
-                </Button>
+                  />} variant="plain" onClick={() => setIsOpen((prev) => !prev)} />
               </Tooltip>
             )}
             <Tooltip content={<div>Copy code to clipboard</div>}>
-              <Button variant="plain" onClick={copyToClipboard}>
-                <CopyIcon />
-              </Button>
+              <Button icon={<CopyIcon />} variant="plain" onClick={copyToClipboard} />
             </Tooltip>
             <Tooltip content={<div>View source on GitHub</div>}>
-              <Button
+              <Button icon={<GithubIcon />}
                 component="a"
                 target="_blank"
                 href={`https://github.com/RedHatInsights/frontend-components/tree/master/packages/docs/examples/${source}.js`}
                 variant="plain"
-              >
-                <GithubIcon />
-              </Button>
+               />
             </Tooltip>
             <Tooltip content={<div>Open example in codesandbox</div>}>
               <div>
                 <form action="https://codesandbox.io/api/v1/sandboxes/define" method="POST" target="_blank">
                   <input type="hidden" name="parameters" value={createCodeSandboxExample(sourceCode)} />
-                  <Button className={classes.imageIconButton} type="submit" variant="plain">
-                    <CodesandboxIcon />
-                  </Button>
+                  <Button icon={<CodesandboxIcon />} className={classes.imageIconButton} type="submit" variant="plain" />
                 </form>
               </div>
             </Tooltip>

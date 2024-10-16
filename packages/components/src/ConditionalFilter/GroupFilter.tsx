@@ -230,7 +230,7 @@ const GroupFilter: React.FunctionComponent<GroupFilterProps> = (props) => {
           id={item?.id || item?.value || `${groupKey}-${key}`}
         />
       ) : isButtonItem(type, item) ? (
-        <Button id={item.id} className={classNames('pf-v5-c-select__option-button', item.className)} variant={item.variant} onClick={item.onClick}>
+        <Button id={item.id} className={classNames('pf-v6-c-select__option-button', item.className)} variant={item.variant} onClick={item.onClick}>
           {item.label}
         </Button>
       ) : (
@@ -270,7 +270,7 @@ const GroupFilter: React.FunctionComponent<GroupFilterProps> = (props) => {
             isExpanded={isOpen}
             className={classNames('ins-c-group-menu-toggle', className, {
               // turn off extra padding if filter input is within the input
-              'pf-v5-u-p-0': isFilterable,
+              'pf-v6-u-p-0': isFilterable,
             })}
             isDisabled={isDisabled}
           >

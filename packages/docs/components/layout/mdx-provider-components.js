@@ -4,13 +4,8 @@ import {
   Button,
   Card,
   CardBody,
-  Text,
-  TextContent,
-  TextList,
-  TextListItem,
-  TextListItemVariants,
-  TextListVariants,
-  TextVariants,
+  Content,
+  ContentVariants,
   Title,
 } from '@patternfly/react-core';
 import { createUseStyles } from 'react-jss';
@@ -50,9 +45,7 @@ function addLinkAnchor(Component) {
         <Component className={classnames(className, 'docs-content-link')} {...props}>
           <a id={anchor} className={classes.anchor} href={`#${anchor}`}>
             {props.children}
-            <Button className={classes.anchorIcon} component="span" variant="plain">
-              <LinkIcon />
-            </Button>
+            <Button icon={<LinkIcon />} className={classes.anchorIcon} component="span" variant="plain" />
           </a>
         </Component>
       );
@@ -74,24 +67,24 @@ const A = ({ children, target, ...props }) => (
   </Link>
 );
 
-export const H1 = addLinkAnchor(({ className, ...props }) => <Title className={classnames(className, 'pf-v5-u-mb-lg')} headingLevel="h1" {...props} />);
+export const H1 = addLinkAnchor(({ className, ...props }) => <Title className={classnames(className, 'pf-v6-u-mb-lg')} headingLevel="h1" {...props} />);
 
 export const H2 = addLinkAnchor(({ className, ...props }) => (
-  <Title className={classnames(className, 'pf-v5-u-mb-md pf-v5-u-mt-md')} headingLevel="h2" {...props} />
+  <Title className={classnames(className, 'pf-v6-u-mb-md pf-v6-u-mt-md')} headingLevel="h2" {...props} />
 ));
 
 export const H3 = addLinkAnchor(({ className, ...props }) => (
-  <Title className={classnames(className, 'pf-v5-u-mb-md pf-v5-u-mt-md')} headingLevel="h3" {...props} />
+  <Title className={classnames(className, 'pf-v6-u-mb-md pf-v6-u-mt-md')} headingLevel="h3" {...props} />
 ));
 export const H4 = addLinkAnchor(({ className, ...props }) => (
-  <Title className={classnames(className, 'pf-v5-u-mb-md pf-v5-u-mt-md')} headingLevel="h4" {...props} />
+  <Title className={classnames(className, 'pf-v6-u-mb-md pf-v6-u-mt-md')} headingLevel="h4" {...props} />
 ));
 export const Table = (props) => {
   const classes = useTableStyles();
   return (
-    <Card className={classnames('pf-v5-u-mb-lg', classes.card)}>
+    <Card className={classnames('pf-v6-u-mb-lg', classes.card)}>
       <CardBody>
-        <table className="pf-v5-c-table pf-m-grid-md" {...props} />
+        <table className="pf-v6-c-table pf-m-grid-md" {...props} />
       </CardBody>
     </Card>
   );
@@ -104,24 +97,24 @@ const Code = ({ children, className }) =>
     <code>{children}</code>
   );
 
-const Li = ({ children }) => <TextListItem component={TextListItemVariants.li}>{children}</TextListItem>;
+const Li = ({ children }) => <Content component={ContentVariants.li}>{children}</Content>;
 
 const OrderedList = ({ children }) => (
-  <TextContent>
-    <TextList component={TextListVariants.ol}>{children}</TextList>
-  </TextContent>
+  <Content>
+    <Content component={ContentVariants.ol}>{children}</Content>
+  </Content>
 );
 
 export const UnorderedList = ({ children }) => (
-  <TextContent>
-    <TextList component={TextListVariants.ul}>{children}</TextList>
-  </TextContent>
+  <Content>
+    <Content component={ContentVariants.ul}>{children}</Content>
+  </Content>
 );
 
 export const Paragraph = ({ children, className }) => (
-  <TextContent className={className}>
-    <Text component={TextVariants.p}>{children}</Text>
-  </TextContent>
+  <Content className={className}>
+    <Content component={ContentVariants.p}>{children}</Content>
+  </Content>
 );
 
 const components = {

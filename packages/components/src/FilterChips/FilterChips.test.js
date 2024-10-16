@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import { ChipGroup } from '@patternfly/react-core';
+import { LabelGroup } from '@patternfly/react-core';
 import FilterChips from './FilterChips';
 
 const filters = [
@@ -51,7 +51,7 @@ describe('FilterChips component', () => {
     it('should call onDelete when deleting a single chip', () => {
       const onDelete = jest.fn();
       const wrapper = mount(<FilterChips filters={filters} onDelete={onDelete} />);
-      wrapper.find('.pf-v5-c-chip button').last().simulate('click');
+      wrapper.find('.pf-v6-c-label button').last().simulate('click');
       expect(onDelete).toHaveBeenCalledWith(expect.anything(), [{ name: 'Chip 4' }]);
       expect(onDelete).toHaveBeenCalledTimes(1);
     });
@@ -59,7 +59,7 @@ describe('FilterChips component', () => {
     it('should call onDelete when deleting a single chip in group', () => {
       const onDelete = jest.fn();
       const wrapper = mount(<FilterChips filters={filters} onDelete={onDelete} />);
-      wrapper.find('.pf-v5-c-chip button').first().simulate('click');
+      wrapper.find('.pf-v6-c-label button').first().simulate('click');
       expect(onDelete).toHaveBeenCalledWith(expect.anything(), [
         {
           category: 'Group 1',
@@ -86,7 +86,7 @@ describe('FilterChips component', () => {
       const onDelete = jest.fn();
       const wrapper = mount(<FilterChips filters={filters} onDelete={onDelete} />);
 
-      wrapper.find(ChipGroup).forEach((group) => group.simulate('click'));
+      wrapper.find(LabelGroup).forEach((group) => group.simulate('click'));
       expect(onDelete).not.toHaveBeenCalled();
     });
 
@@ -101,7 +101,7 @@ describe('FilterChips component', () => {
         ],
       };
       const wrapper = mount(<FilterChips filters={[...filters, newGroup]} onDeleteGroup={onDelete} />);
-      wrapper.find('.pf-v5-c-chip-group__close button').last().simulate('click');
+      wrapper.find('.pf-v6-c-label-group__close button').last().simulate('click');
       expect(onDelete).toHaveBeenCalledWith(
         expect.anything(),
         [newGroup],
