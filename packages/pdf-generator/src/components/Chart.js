@@ -5,9 +5,9 @@ import { CircleIconConfig } from '@patternfly/react-icons/dist/js/icons/circle-i
 import PropTypes from 'prop-types';
 import { Canvas, Text, View } from '@react-pdf/renderer';
 import { ChartBar } from '@patternfly/react-charts/dist/js/victory/components/ChartBar/ChartBar';
-import { ChartPie } from '@patternfly/react-charts/dist/js/victory/components/ChartBar/ChartBar';
-import { ChartDonut } from '@patternfly/react-charts/dist/js/victory/components/ChartBar/ChartBar';
-import { ChartDonutUtilization } from '@patternfly/react-charts/dist/js/victory/components/ChartBar/ChartBar';
+import { ChartPie } from '@patternfly/react-charts/dist/js/victory/components/ChartPie/ChartPie';
+import { ChartDonut } from '@patternfly/react-charts/dist/js/victory/components/ChartDonut/ChartDonut';
+import { ChartDonutUtilization } from '@patternfly/react-charts/dist/js/victory/components/ChartDonutUtilization/ChartDonutUtilization';
 import { getLightThemeColors } from '../utils/theme/utils';
 import Table from './Table';
 import styles from '../utils/styles';
