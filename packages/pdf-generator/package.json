@@ -38,7 +38,7 @@
         "@patternfly/react-styles": "6.0.0-prerelease.6",
         "@patternfly/react-tokens": "6.0.0-prerelease.7",
         "@react-pdf/renderer": "^1.6.8",
-        "@redhat-cloud-services/frontend-components": "^4.0.0",
+        "@redhat-cloud-services/frontend-components": "file:../components",
         "react": "16.12.0",
         "react-dom": "16.12.0",
         "rgb-hex": "^3.0.0",

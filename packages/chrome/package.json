@@ -35,8 +35,8 @@
         "react-router-dom": "^6.0.0"
     },
     "devDependencies": {
-        "@redhat-cloud-services/types": "^1.0.3",
-        "@types/react": "^18.0.0",
+        "@redhat-cloud-services/types": "file:../types",
+        "@types/react": "^18.3.3",
         "glob": "10.3.3"
     },
     "sideEffects": false

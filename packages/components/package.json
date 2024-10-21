@@ -46,8 +46,8 @@
         "react-router-dom": "^5.0.0 || ^6.0.0"
     },
     "dependencies": {
-        "@redhat-cloud-services/frontend-components-utilities": "^4.0.0",
-        "@redhat-cloud-services/types": "^1.0.9",
+        "@redhat-cloud-services/frontend-components-utilities": "file:../utils",
+        "@redhat-cloud-services/types": "file:../types",
         "@patternfly/react-component-groups": "6.0.0-prerelease.7",
         "@scalprum/core": "^0.8.1",
         "@scalprum/react-core": "^0.9.1",
@@ -57,8 +57,8 @@
     "devDependencies": {
         "@cypress/webpack-dev-server": "^1.8.4",
         "@patternfly/patternfly": "6.0.0-prerelease.15",
-        "@redhat-cloud-services/frontend-components-config-utilities": "^3.0.0",
-        "@types/react": "^18.0.0",
+        "@redhat-cloud-services/frontend-components-config-utilities": "file:../config-utils",
+        "@types/react": "^18.3.3",
         "css-loader": "^6.7.1",
         "cypress": "^12.17.3",
         "eslint-plugin-cypress": "^2.12.1",

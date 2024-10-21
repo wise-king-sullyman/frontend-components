@@ -61,6 +61,9 @@ const BaseAsyncComponent: React.FunctionComponent<BaseAsyncComponentProps> = ({
  * This component uses fallback as ErrorComponent, if you want to show different
  * component for error pass it as ErrorComponent prop.
  */
-export const AsyncComponent = React.forwardRef<HTMLElement, AsyncComponentProps>((props, ref) => <BaseAsyncComponent innerRef={ref} {...props} />);
+export const AsyncComponent = React.forwardRef<HTMLElement, AsyncComponentProps>((props, ref) => {
+  const { appName, module, fallback, component, ...rest } = props;
+  return <BaseAsyncComponent innerRef={ref} appName={appName} module={module} fallback={fallback} component={component} {...rest} />;
+});
 
 export default AsyncComponent;
